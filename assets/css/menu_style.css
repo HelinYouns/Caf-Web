@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap&family=Imperial+Script&display=swap');
+
+
+html {
+  scroll-behavior: smooth;
+
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/* Body Background Image */
+body {
+  background-image: url('../../assets/1127.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background-attachment: fixed;
+
+}
+
+/* Align Main  */
+main {
+  background-color: #ffffff;
+  margin: 4em 2em 0 2em;
+  box-shadow: 1px 2px 4px rgb(160, 160, 160);
+  flex-grow: 1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+}
+
+
+/* Initial wrapper with space around */
+.navbar-wrapper {
+  position: absolute;
+  top: 2em;
+  left: 2em;
+  right: 2em;
+  transition: all 0.2s ease-in-out;
+  z-index: 999;
+}
+
+/* When scrolled, make it full width */
+.navbar-wrapper.scrolled {
+  position: fixed;
+  top: 0;
+  left: 1em;
+  right: 1em;
+}
+
+/* Navbar inside stays full width of the wrapper */
+.navbar {
+  background-color: #DBDBDB;
+  transition: all 0.2s ease-in-out;
+  backdrop-filter: blur(0);
+  height: 60px;
+}
+
+/* Scrolled state styling */
+.navbar-wrapper.scrolled .navbar {
+  background-color: rgb(216, 216, 216, 0.6);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 48px;
+  text-align: center;
+  padding: 20px;
+  float: left;
+  font-family: 'Caprasimo';
+  color: #393E46;
+}
+
+
+.nav-links {
+  overflow: hidden;
+  font-family: 'Caprasimo';
+  font-style: italic;
+}
+
+.nav-links li {
+  float: right;
+  border-left: 1px solid #ffffff;
+  padding: 10px;
+  font-size: 17px;
+
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #393E46;
+  font-weight: 500;
+  padding: 10px;
+  display: block;
+  text-align: center;
+
+}
+
+.nav-links li:hover {
+  background-color: #cacaca;
+}
+
+
+/* Menu Section */
+.menu-category {
+  position: sticky;
+  top: 60px;
+  z-index: 999;
+  background-color: #fafafa;
+
+  padding: 15px 0;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-category ul {
+  gap: 20px;
+}
+
+.menu-category ul li {
+  position: relative;
+  font-family: 'Caprasimo';
+  font-size: 18px;
+  color: #A1A1A1;
+  font-style: italic;
+  cursor: pointer;
+  padding: 20px 5px;
+  transition: color 0.3s ease;
+  align-items: end;
+  gap: 10px;
+}
+
+.menu-category ul li.selected-category {
+  color: #393E46;
+  font-style: normal;
+}
+
+.selected-category .selected-line {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 100%;
+  background-color: #393E46;
+}
+
+
+
+.menu-category ul li.hover-category::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: 2px;
+  background-color: #A1A1A1;
+  transition: transform 0.3s ease;
+}
+
+.menu-category ul li.hover-category:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.menu-category ul li.hover-category:hover {
+  color: #868686;
+}
+
+/* Menu List */
+.menu {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  border-top: 1px solid #dddddd;
+  margin: 0 5em 2em 5em;
+
+}
+
+.item-name {
+  border-bottom: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  padding: 1em 2.5em 1em 2.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+
+
+}
+
+.item-price {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-family: 'Caprasimo';
+
+}
+
+.price-curency {
+  padding-left: 0.4em;
+  font-size: 12px;
+  font-weight: 200;
+  color: #bebebe;
+}
+
+.item-name h4 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: 'Caprasimo';
+
+}
+
+.item-name p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+
+}
+
+/* Menu list h2 in sections */
+.menu-title-container {
+  text-align: center;
+  margin: 3em 0 3em;
+}
+
+.menu-title-container img {
+  margin-bottom: 1.5em;
+  height: auto;
+  width: 220px;
+  object-fit: cover;
+
+}
+
+.menu-title-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.4em;
+  font-weight: 500;
+  font-family: 'Caprasimo';
+}
+
+.menu-title-line {
+  width: 80px;
+  height: 2px;
+  background-color: #A1A1A1;
+  margin: 5px auto 0;
+}

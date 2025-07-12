@@ -1,0 +1,154 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/gallary.css">
+  <title>Vero Gallary</title>
+</head>
+
+<body>
+  
+
+
+  <main>
+
+    <div>
+      <h1 class="text-1">Gallary</h1>
+    </div>
+    <div class="gallary-wrapper">
+
+      <div class="content d-flex">
+        <div class="content-img"><img src="assets/images/gallary.jpeg" alt="Gallary Images"></div>
+        <div class="content-desc d-flex">
+          <h3>Ingot Coffee Break</h3>
+          <p> It is a long established fact that a reader will be distracted by the readable content of a page when
+            looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+            letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+            desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
+            search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved
+            over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+          </p>
+        </div>
+      </div>
+
+      <div class="content d-flex">
+        <div class="content-img"><img src="assets/images/gallary.jpeg" alt="Gallary Images"></div>
+        <div class="content-desc d-flex">
+          <h3>Ingot Coffee Break</h3>
+          <p> It is a long established fact that a reader will be distracted by the readable content of a page when
+            looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+            letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+            desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
+            search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved
+            over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  
+ 
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vero Coffee – Gallery</title>
+  <link rel="stylesheet" href="assets/css/gallery.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <div class="navbar-wrapper" id="navbar-wrapper">
+    <nav class="navbar" id="navbar">
+      <div class="logo"><span>Vero</span> Coffee</div>
+      <ul class="nav-links">
+        <ul class="nav-links">
+        <li class="lang-dropdown"><a href="#">English</a>
+          <ul class="lang-menu">
+            <li><a href="#" onclick="changeLanguage('ku')">کوردی</a></li>
+            <li><a href="#" onclick="changeLanguage('ar')">عربي</a></li>
+          </ul>
+        </li>
+        <li><a href="#" onclick="goToGallery()">Gallary</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#" onclick="goToMenu()">Menu</a></li>
+        <li><a href="#" onclick="goToHome()">Home</a></li>
+      </ul>
+    </nav>
+  </div>
+  <main>
+
+    <div class="gallery-header">
+      <h2>Our Café in Action</h2>
+      <p>Explore our coffee breaks, events, and behind-the-scenes moments</p>
+    </div>
+
+    <section class="gallery-grid">
+      <div class="gallery-item">
+        <img src="assets/images/gallary.jpeg" alt="Coffee break service">
+        <h3>Coffee Break Service</h3>
+        <p>Providing refreshing coffee setups for corporate and private events.</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/images/gallary.jpeg" alt="Event hosting">
+        <h3>Event Hosting</h3>
+        <p>From birthdays to business meetings, we make every event cozy and classy.</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/images/gallary.jpeg" alt="Team preparation">
+        <h3>Team in Action</h3>
+        <p>Our baristas preparing specialty drinks with passion and skill.</p>
+      </div>
+
+      <!-- Add more items as needed -->
+    </section>
+  </main>
+  <footer>
+    <span class="footer-line"></span>
+    <div class="footer-wrapper d-flex">
+
+      <div class="cafe-div cafe-name">Vero Coffee</div>
+
+      <div class="cafe-info">
+        <ul class="d-flex">
+          <li>+964 750 123 4567</li>
+          <li><a href="https://maps.app.goo.gl/h7afW4Qnp9x4MeBB6">Rahimawa, Kirkuk, Iraq</a></li>
+        </ul>
+      </div>
+
+      <div class="cafe-media">
+        <ul class="d-flex">
+          <li><a
+              href="https://www.instagram.com/vero_coffee?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
+                class="media-icon" src="assets/icons/instagram.png" alt="Cafe Instagram"></a></li>
+          <li><a href="https://www.facebook.com/share/17Lnfj2rWM/?mibextid=wwXIfr"><img class="media-icon"
+                src="assets/icons/facebook.png" alt="Cafe Facebook"></a></li>
+          <li><a href="https://snapchat.com/t/KlfgmVgj"><img class="media-icon" src="assets/icons/snapchat.png"
+                alt="Cafe Snapchat"></a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <p id="developer">Developed by: Helin Younis</p>
+
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

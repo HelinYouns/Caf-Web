@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Vero Coffee</title>
+
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="navbar-wrapper" id="navbar-wrapper">
+    <nav class="navbar" id="navbar">
+      <div class="logo"><span>Vero</span> Coffee</div>
+      <ul class="nav-links">
+
+        <li><a href="#" dara-key="home">Home</a></li>
+        <li><a href="#" dara-key="menu" onclick="goToMenu()">Menu</a></li>
+        <li><a href="#about" dara-key="about">About</a></li>
+        <li><a href="#service" dara-key="service">Service</a></li>
+        <!-- <li><a href="#" onclick="goToGallery()">Gallery</a></li> -->
+        <li><a href="#contact">contact</a></li>
+        <li class="lang-dropdown d-flex">
+          <a href="#">English <img class="icon-phone" src="assets/icons/arrow.png" alt=""></a>
+          <ul class="lang-menu">
+            <li><a href="#" onclick="changeLanguage('ku')">کوردی</a></li>
+            <li><a href="#" onclick="changeLanguage('en')">عربي</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+  <main>
+    <section class="home-banner sections" id="home">
+
+    </section>
+
+    <section class="sections d-flex " id="menu">
+      <div class="menu-wrapper d-flex">
+        <div class="menu-header d-flex">
+          <h2 class="welcom-h" data-key="welcomeTitle">Welcome to </h2>
+          <h1 class="cafe-name">VERO COFFE</h1>
+          <p data-key="welcomeText">Where every sip feels like home</p>
+        </div>
+
+        <div class="menu-category d-flex">
+
+          <div class="catigory d-flex">
+
+            <div class="icon-wrapper">
+              <img src="assets/icons/coffee-bean.png" alt="Icon" class="icon-img" />
+              <span class="hover-line"></span>
+            </div>
+
+            <div class="category-h">
+              <h3>COFFEE CREATIONS</h3>
+              <p>Hot & Cold</p>
+            </div>
+            <p class="category-p">Warm your soul or cool down your day with our handcrafted hot and iced coffees. From
+              classic brews to
+              creamy creations, every cup is made with love and premium beans.</p>
+            <div></div>
+          </div>
+
+          <div class="catigory d-flex">
+
+            <div class="icon-wrapper">
+              <img src="assets/icons/cherries.png" alt="Icon" class="icon-img" />
+              <span class="hover-line"></span>
+            </div>
+
+            <div class="category-h">
+              <h3>MILKY MOMENTS</h3>
+              <p>Smooth & Creamy</p>
+            </div>
+            <p class="category-p">Indulge in silky milkshakes and creamy blends that bring joy in every sip. Perfect for
+              your sweet
+              cravings or a fun mood-lifter.</p>
+
+          </div>
+          <div class="catigory d-flex">
+
+            <div class="icon-wrapper">
+              <img src="assets/icons/lemonade.png" alt="Icon" class="icon-img" />
+              <span class="hover-line"></span>
+            </div>
+            <div class="category-h">
+              <h3>FRESH & FIZZY</h3>
+              <p>Mojito & First Drink</p>
+            </div>
+            <p class="category-p">Refreshing and uplifting our fresh drinks and sparkling mojitos are a perfect escape
+              from the ordinary.
+              Great for the first sip of the day or a breezy afternoon.</p>
+
+          </div>
+          <div class="catigory d-flex">
+
+            <div class="icon-wrapper">
+              <img src="assets/icons/cake.png" alt="Icon" class="icon-img" />
+              <span class="hover-line"></span>
+            </div>
+            <div class="category-h">
+              <h3>SWEET TREATS</h3>
+              <p>Cakes & Desserts</p>
+            </div>
+            <p class="category-p">From rich slices of cake to delicate pastries, our dessert collection is made to
+              satisfy your sweet tooth
+              and pair perfectly with your favorite drink.All tastes you need is here</p>
+
+          </div>
+        </div>
+        <input onclick="goToMenu()" class="secondary-btn" type="button" value="See Menu">
+      </div>
+    </section>
+    <div class="section-divider d-flex">
+      <span class="divider-icon">
+        <i class="fas fa-mug-hot"><img src="assets/icons/ornament-divider.png" alt=""></i>
+        <!-- Font Awesome coffee icon -->
+      </span>
+    </div>
+    <section class="d-flex " id="about">
+      <div class="about-wrapper d-flex">
+
+        <div class="div-img">
+          <img src="assets/images/about.jpeg" alt="Cafe owner photo">
+        </div>
+        <div class="div-about">
+
+          <div class="menu-header d-flex">
+            <h3 class="welcom-h">About</h3>
+            <h2 class="cafe-name">VERO COFFEE</h2>
+
+          </div>
+          <img src="assets/icons/nature.png" alt="">
+
+          <p>
+            <span>Vero Coffee</span> has been proudly serving since 2020, founded and owned by Ali.
+            The name <em>"Vero"</em> is derived from Italian, meaning <span>"true"</span> a reflection of our
+            dedication to offering authentic, high-quality coffee experiences.
+          </p>
+          <p>
+            Vero Coffee began as a small shop in <span>Rahimawa, Kirkuk</span>, and thanks to the love and support
+            of our community, we’ve grown into <span>two thriving branches</span>.
+          </p>
+          <p>
+            Every cup we serve is crafted with care, combining rich flavors, cozy vibes, and a passion for making your
+            day better one coffee at a time.
+          </p>
+          <p><em>True Coffee. True Moments.</em></p>
+
+
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider d-flex">
+      <span class="divider-icon">
+        <i class="fas fa-mug-hot"><img src="assets/icons/ornament-divider.png" alt=""></i>
+        <!-- Font Awesome coffee icon -->
+      </span>
+    </div>
+
+    <section class="d-flex d-column" id="service">
+      <div class="service-wrapper d-flex">
+
+        <div class="service-header menu-header d-flex">
+          <h2 class="cafe-name">OUR SERVICES</h2>
+          <p>Vero Coffee can make your moments much valuable</p>
+        </div>
+
+        <div class="services-div d-flex">
+
+          <div class="services d-flex">
+
+            <img src="assets/icons/cup-of-drink.png" alt="Coffee break icon for coffee break service">
+
+
+            <h3>Coffee Break</h3>
+            <p>
+              Elevate your events with our coffee break service.
+              We take care of everything from freshly brewed coffee to a full snack arrangement
+              ensuring your guests enjoy a relaxing and flavorful break during conferences, meetings, or special
+              occasions.
+            </p>
+
+
+
+          </div>
+
+          <div class="services d-flex">
+            <img src="assets/icons/musical-note.png" alt="Music note icon for music event service">
+
+
+            <h3>Music Events</h3>
+            <p>Whether you're vibing solo or hanging with friends,
+              Vero Coffee brings you the rhythm of the city.
+              Chill out to laid-back beats during the day, or
+              swing by for our live sessions and acoustic evenings
+              that turn your coffee time into a full experience.</p>
+
+
+          </div>
+
+
+          <div class="services d-flex">
+            <img src="assets/icons/balloons.png" alt="Ballon icon for Berthday service">
+
+
+            <h3>Birthday</h3>
+            <p>Celebrate your birthday at Vero Coffee with great vibes,
+              tasty treats, and the people you love.
+              We provide the space, the coffee, and the cozy atmosphere
+              you bring the joy!
+              From decorations to snack tables, our team is ready to help
+              make your party extra special.</p>
+
+
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <div class="section-divider d-flex">
+      <span class="divider-icon">
+        <i class="fas fa-mug-hot"><img src="assets/icons/ornament-divider.png" alt=""></i>
+      </span>
+    </div>
+
+    <section class=" d-flex d-column" id="bolg">
+
+      <div class="blog-wrapper d-flex">
+
+        <div class="blog-header d-flex">
+
+          <h2 class="cafe-name">Vero Coffee’s Blog
+          </h2>
+          <p>Brewed thoughts, fresh ideas, and behind-the-scenes stories. Sip into our world of coffee,
+            culture, and community.
+
+          </p>
+
+        </div>
+        <div class="d-flex">
+          <div class="gallary-frame-left">
+            <div class="rotate-wrapper">
+              <img class="gallry-frame" src="assets/icons/ornament-divider.png" alt="">
+            </div>
+          </div>
+
+          <div class="modern-frame">
+            <img src="assets/images/gallary.jpeg" alt="Framed Image" />
+            <input type="button" value="See Gallary" class="secondary-btn blog-btn" onclick="goToGallery()">
+          </div>
+
+          <div class="gallary-frame-right">
+            <div class="rotate-wrapper">
+              <img class="gallry-frame" src="assets/icons/ornament-divider.png" alt="">
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+    <section class="testimonial-section d-flex d-column" id="testimonials">
+
+      <!-- Decorative coffee images -->
+      <img src="assets/icons/cake.png" alt="Left Coffee" class="coffee-img coffee-left">
+      <img src="assets/icons/coffee-bean.png" alt="Right Coffee" class="coffee-img coffee-right">
+
+      <div class="testimonial-wrapper d-flex">
+
+        <div class="testimonial-header d-flex">
+          <h2 class="cafe-name">What Our Customers Say</h2>
+          <p>Your words brew our passion — thank you for sharing your experiences.</p>
+        </div>
+
+        <div class="testimonial-container d-flex">
+          <div class="testimonial-display" id="testimonialDisplay"></div>
+          <div class="testimonial-nav-buttons">
+            <button id="prevBtn" class="testimonial-btn">&lt;</button>
+            <button id="nextBtn" class="testimonial-btn">&gt;</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-container d-flex">
+        <div class="d-flex">
+          <!-- Left Info Section -->
+          <div class="contact-info d-flex">
+            <div class="contact-info-header">
+              <h2 class="cafe-name">Contact Us</h2>
+              <p>We're always happy to hear from you, contact us below. <br> We are open daily 7 to 12</p>
+            </div>
+
+            <div class="contact-media d-flex">
+
+              <p><img class="icon-phone" src="assets/icons/phone.png" alt=""> +964 770 123 4567</p>
+
+              <div class="location">
+
+                <ul class="d-flex">
+                  <li><a href="https://maps.app.goo.gl/h7afW4Qnp9x4MeBB6"><img src="assets/icons/pin-fill.png" alt="First Cafe Location"
+                        class="icon-phone">Rahimawa, Kerkuk, Iraq</a></li>
+                  <li><a href="https://maps.app.goo.gl/rDhswsopWWD4kP8g8"><img src="assets/icons/pin-fill.png" alt="Second Cafe Location"
+                        class="icon-phone">Azady, Kirkuk, Iraq</a></li>
+                </ul>
+              </div>
+
+              <div class="contact-delivery d-flex">
+                <p><strong>Follow us on:</strong></p>
+                <ul class="d-flex">
+                  <li><a href=""><img src="assets/icons/instagram.png" alt="Cafe Insstagram Account" class="icon"></a>
+                  </li>
+                  <li><a href=""><img src="assets/icons/facebook.png" alt="Cafe Facebook Account" class="icon"></a></li>
+                  <li><a href=""><img src="assets/icons/snapchat.png" alt="Cafe Snapchat Account" class="icon"></a></li>
+                </ul>
+              </div>
+
+              <div class="delivery-track d-flex">
+                <p><strong>Find Us On:</strong></p>
+                <ul class="d-flex">
+                  <li> <img class="icon " src="assets/icons/lezzoo.PNG" alt=""></li>
+                  <li> <img class="icon " src="assets/icons/tiptop.PNG" alt=""></li>
+                  <li><img class="icon " src="assets/icons/toters.PNG" alt=""></li>
+                </ul>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Right Form Section -->
+
+          <div class="contact-method d-flex">
+            <div>
+              <h2>Message us on WhatsApp👇🏻</h2>
+              <p>urinv idjv ishjnfc ds sijcnsdkv klJVSD Piolnv flk ijvk </p>
+            </div>
+            <button onclick="goToWhatsApp()">Start Messaging</button>
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <span class="footer-line"></span>
+    <div class="footer-wrapper d-flex">
+
+      <div class="cafe-div cafe-name">Vero Coffee</div>
+
+      <div class="cafe-info">
+        <a href="https://maps.app.goo.gl/h7afW4Qnp9x4MeBB6">Rahimawa, Kirkuk, Iraq</a>
+      </div>
+
+      <div class="cafe-media">
+        <ul class="d-flex">
+          <li><a
+              href="https://www.instagram.com/vero_coffee?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
+                class="icon" src="assets/icons/instagram.png" alt="Cafe Instagram"></a></li>
+          <li><a href="https://www.facebook.com/share/17Lnfj2rWM/?mibextid=wwXIfr"><img class="icon"
+                src="assets/icons/facebook.png" alt="Cafe Facebook"></a></li>
+          <li><a href="https://snapchat.com/t/KlfgmVgj"><img class="icon" src="assets/icons/snapchat.png"
+                alt="Cafe Snapchat"></a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <p id="developer">Developed by: Helin Younis</p>
+
+  </footer>
+
+  <script src="assets/js/lang.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
