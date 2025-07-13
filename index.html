@@ -5,45 +5,67 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+
+  <link rel="icon" type="image/png" href="assets/icons/cup-of-drink.png">
   <title>Vero Coffee</title>
 
 </head>
 
-<body>
+<body class="flex d-column">
   <!-- Header -->
-  <div class="navbar-wrapper" id="navbar-wrapper">
-    <nav class="navbar" id="navbar">
-      <div class="logo"><span>Vero</span> Coffee</div>
-      <ul class="nav-links">
+  <header>
+    <div class="navbar-wrapper" id="navbar-wrapper">
+      <nav class="navbar flex align-center justify-space-between" id="navbar">
 
-        <li><a href="#" dara-key="home">Home</a></li>
-        <li><a href="#" dara-key="menu" onclick="goToMenu()">Menu</a></li>
-        <li><a href="#about" dara-key="about">About</a></li>
-        <li><a href="#service" dara-key="service">Service</a></li>
-        <!-- <li><a href="#" onclick="goToGallery()">Gallery</a></li> -->
-        <li><a href="#contact">contact</a></li>
-        <li class="lang-dropdown d-flex">
-          <a href="#">English <img class="icon-phone" src="assets/icons/arrow.png" alt=""></a>
-          <ul class="lang-menu">
-            <li><a href="#" onclick="changeLanguage('ku')">کوردی</a></li>
-            <li><a href="#" onclick="changeLanguage('en')">عربي</a></li>
-          </ul>
-        </li>
+        <div class="logo caprasimo-regular">
+          <span class="logo-script imperial-script-regular">Vero&nbsp;</span> Coffee
+        </div>
 
-      </ul>
-    </nav>
-  </div>
+        <ul class="nav-links flex align-center caprasimo-regular">
+
+          <li><a href="#home" data-key="home">Home</a></li>
+          <li><a href="#menu" data-key="menu" id="menu-link">Menu</a></li>
+          <li><a href="#about" data-key="about">About</a></li>
+          <li><a href="#service" data-key="service">Service</a></li>
+          <li><a href="#contact" data-key="contact">Contact</a></li>
+
+          <li class="lang-dropdown">
+            <button class="lang-btn caprasimo-regular" aria-haspopup="true" aria-expanded="false" data-key="english">
+              English <img class="icon-s" src="assets/icons/arrow.png" alt="Dropdown arrow">
+            </button>
+            <ul class="lang-menu">
+              <li><a href="#" class="amiri-regular" data-lang="ku" data-key="kurdish">کوردی</a></li>
+              <li><a href="#" class="amiri-regular" data-lang="ar" data-key="arabic">عربي</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
   <main>
-    <section class="home-banner sections" id="home">
 
+    <section class="sections flex align-center justify-center" id="home">
+      <div class="banner-wrapper flex align-center justify-space-between">
+        <div class="flex d-column">
+          <h2 class="h2-style caprasimo-regular">Today's Coffee is sponserd by <br> Vero Coffee</h2>
+          <p>Open Daily's <br> <span>7am to 12pm</span></p>
+        </div>
+
+        <div class="flex align-center justify-center"><img id="coffee-cup" src="assets/icons/coffee-icon.png" alt=""></div>
+      </div>
     </section>
 
-    <section class="sections d-flex " id="menu">
-      <div class="menu-wrapper d-flex">
-        <div class="menu-header d-flex">
-          <h2 class="welcom-h" data-key="welcomeTitle">Welcome to </h2>
-          <h1 class="cafe-name">VERO COFFE</h1>
-          <p data-key="welcomeText">Where every sip feels like home</p>
+    <section class="sections flex align-center justify-center" id="menu">
+      <div class="menu-wrapper flex d-column align-center justify-center">
+        <div class="menu-header flex d-column align-center justify-center">
+
+          <p class="imperial-script-regular" id="welcom-p" data-key="welcomeTitle">Welcome to </p>
+          <h1 class="caprasimo-regular" id="h1-style" data-key="cafeName">VERO COFFEE</h1>
+          <p class="noto-sans p-slogan-style" data-key="cafeSlogan">Where every sip feels like home</p>
+
         </div>
 
         <div class="menu-category d-flex">
@@ -312,10 +334,10 @@
               <div class="location">
 
                 <ul class="d-flex">
-                  <li><a href="https://maps.app.goo.gl/h7afW4Qnp9x4MeBB6"><img src="assets/icons/pin-fill.png" alt="First Cafe Location"
-                        class="icon-phone">Rahimawa, Kerkuk, Iraq</a></li>
-                  <li><a href="https://maps.app.goo.gl/rDhswsopWWD4kP8g8"><img src="assets/icons/pin-fill.png" alt="Second Cafe Location"
-                        class="icon-phone">Azady, Kirkuk, Iraq</a></li>
+                  <li><a href="https://maps.app.goo.gl/h7afW4Qnp9x4MeBB6"><img src="assets/icons/pin-fill.png"
+                        alt="First Cafe Location" class="icon-phone">Rahimawa, Kerkuk, Iraq</a></li>
+                  <li><a href="https://maps.app.goo.gl/rDhswsopWWD4kP8g8"><img src="assets/icons/pin-fill.png"
+                        alt="Second Cafe Location" class="icon-phone">Azady, Kirkuk, Iraq</a></li>
                 </ul>
               </div>
 
