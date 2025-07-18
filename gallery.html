@@ -1,152 +1,128 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/gallary.css">
-  <title>Vero Gallary</title>
-</head>
-
-<body>
-  
-
-
-  <main>
-
-    <div>
-      <h1 class="text-1">Gallary</h1>
-    </div>
-    <div class="gallary-wrapper">
-
-      <div class="content d-flex">
-        <div class="content-img"><img src="assets/images/gallary.jpeg" alt="Gallary Images"></div>
-        <div class="content-desc d-flex">
-          <h3>Ingot Coffee Break</h3>
-          <p> It is a long established fact that a reader will be distracted by the readable content of a page when
-            looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
-            letters, as opposed to using 'Content here, content here', making it look like readable English. Many
-            desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
-            search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved
-            over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-          </p>
-        </div>
-      </div>
-
-      <div class="content d-flex">
-        <div class="content-img"><img src="assets/images/gallary.jpeg" alt="Gallary Images"></div>
-        <div class="content-desc d-flex">
-          <h3>Ingot Coffee Break</h3>
-          <p> It is a long established fact that a reader will be distracted by the readable content of a page when
-            looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
-            letters, as opposed to using 'Content here, content here', making it look like readable English. Many
-            desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
-            search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved
-            over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </main>
-
-  
- 
-</body>
-
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <title>Vero Coffee – Gallery</title>
+  <link rel="stylesheet" href="assets/css/color_palette.css">
   <link rel="stylesheet" href="assets/css/gallery.css">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
-  <div class="navbar-wrapper" id="navbar-wrapper">
-    <nav class="navbar" id="navbar">
-      <div class="logo"><span>Vero</span> Coffee</div>
-      <ul class="nav-links">
-        <ul class="nav-links">
-        <li class="lang-dropdown"><a href="#">English</a>
-          <ul class="lang-menu">
-            <li><a href="#" onclick="changeLanguage('ku')">کوردی</a></li>
-            <li><a href="#" onclick="changeLanguage('ar')">عربي</a></li>
-          </ul>
-        </li>
-        <li><a href="#" onclick="goToGallery()">Gallary</a></li>
-        <li><a href="#service">Service</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#" onclick="goToMenu()">Menu</a></li>
-        <li><a href="#" onclick="goToHome()">Home</a></li>
-      </ul>
-    </nav>
-  </div>
+  <header>
+    <div class="navbar-wrapper" id="navbar-wrapper">
+      <nav class="navbar flex align-center justify-space-between" id="navbar">
+
+        <div class="logo caprasimo-regular">
+          <span class="logo-script imperial-script-regular">Vero&nbsp;</span> Coffee
+        </div>
+
+        <ul class="nav-links flex align-center caprasimo-regular">
+
+          <li><a href="#home" data-key="home">Home</a></li>
+          <li><a href="#menu" data-key="menu" id="menu-link">Menu</a></li>
+          <li><a href="#about" data-key="about">About</a></li>
+          <li><a href="#service" data-key="service">Service</a></li>
+          <li><a href="#contact" data-key="contact">Contact</a></li>
+
+          <li class="lang-dropdown">
+            <button class="lang-btn caprasimo-regular" aria-haspopup="true" aria-expanded="false" data-key="english">
+              English <img class="icon-s" src="assets/icons/arrow.png" alt="Dropdown arrow">
+            </button>
+            <ul class="lang-menu">
+              <li><a href="#" class="amiri-regular" data-lang="ku" data-key="kurdish">کوردی</a></li>
+              <li><a href="#" class="amiri-regular" data-lang="ar" data-key="arabic">عربي</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
   <main>
 
     <div class="gallery-header">
-      <h2>Our Café in Action</h2>
-      <p>Explore our coffee breaks, events, and behind-the-scenes moments</p>
+      <h2 class="h2-style">Photo Gallery</h2>
     </div>
 
-    <section class="gallery-grid">
-      <div class="gallery-item">
-        <img src="assets/images/gallary.jpeg" alt="Coffee break service">
-        <h3>Coffee Break Service</h3>
-        <p>Providing refreshing coffee setups for corporate and private events.</p>
-      </div>
+    <section class="gallery-section">
+      <!-- Row 1: Images Right, Text Left -->
+      <div class="gallery-row">
 
-      <div class="gallery-item">
-        <img src="assets/images/gallary.jpeg" alt="Event hosting">
-        <h3>Event Hosting</h3>
-        <p>From birthdays to business meetings, we make every event cozy and classy.</p>
-      </div>
+        <div class="gallery-info">
+          <h2 class="h2-style">Step Into Our Café World</h2>
+          <img src="assets/icons/nature.png" alt="Nature Icon">
+          <p class="description-p">
+            Take a peek into the moments we’ve brewed — smiles,
+            events, and everything coffee. Every visit is a story. Here’s a look into the good times
+            and great coffee shared at Vero.  Every visit is a story. Here’s a look into the good times
+            and great coffee shared at Vero.  Every visit is a story. Here’s a look into the good times
+            and great coffee shared at Vero.
+          </p>
 
-      <div class="gallery-item">
-        <img src="assets/images/gallary.jpeg" alt="Team preparation">
-        <h3>Team in Action</h3>
-        <p>Our baristas preparing specialty drinks with passion and skill.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-image-wrapper"><img src="assets/images/gallary.jpeg" alt="Image in Gallery" /></div>
+          <div class="gallery-image-wrapper"><img src="assets/images/gallary.jpeg" alt="Image in Gallery" /></div>
+          <div class="gallery-image-wrapper"><img src="assets/images/gallary.jpeg" alt="Image in Gallery" /></div>
+          <div class="gallery-image-wrapper"><img src="assets/images/gallary.jpeg" alt="Image in Gallery" /></div>
+        </div>
       </div>
-
-      <!-- Add more items as needed -->
+      <span class="line"></span>
+      <!-- Row 2: Images Left, Text Right -->
+      <div class="gallery-row reverse">
+        <div class="gallery-info">
+          <h2 class="h2-style">Brewed Moments</h2>
+          <img src="assets/icons/nature.png" alt="Nature Icon">
+          <p class="description-p">
+            Every visit is a story. Here’s a look into the good times
+            and great coffee shared at Vero.  Every visit is a story. Here’s a look into the good times
+            and great coffee shared at Vero.  Every visit is a story. Here’s a look into the good times
+            and great coffee shared at Vero.
+          </p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-image-wrapper"><img src="assets/images/gallary.jpeg" alt="Image in Gallery" /></div>
+          <div class="gallery-image-wrapper"><img src="assets/images/gallary.jpeg" alt="Image in Gallery" /></div>
+          <div class="gallery-image-wrapper"><img src="assets/images/gallary.jpeg" alt="Image in Gallery" /></div>
+          <div class="gallery-image-wrapper"><img src="assets/images/gallary.jpeg" alt="Image in Gallery" /></div>
+        </div>
+      </div>
     </section>
+
   </main>
   <footer>
     <span class="footer-line"></span>
-    <div class="footer-wrapper d-flex">
 
-      <div class="cafe-div cafe-name">Vero Coffee</div>
+    <div class="footer-wrapper flex align-center justify-between wrap">
 
+      <!-- Cafe Name -->
+      <div class="cafe-div">Vero Coffee</div>
+
+      <!-- Cafe Info -->
       <div class="cafe-info">
-        <ul class="d-flex">
-          <li>+964 750 123 4567</li>
-          <li><a href="https://maps.app.goo.gl/h7afW4Qnp9x4MeBB6">Rahimawa, Kirkuk, Iraq</a></li>
-        </ul>
+        <a href="https://maps.app.goo.gl/h7afW4Qnp9x4MeBB6">Rahimawa, Kirkuk, Iraq</a>
       </div>
 
-      <div class="cafe-media">
-        <ul class="d-flex">
-          <li><a
-              href="https://www.instagram.com/vero_coffee?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
-                class="media-icon" src="assets/icons/instagram.png" alt="Cafe Instagram"></a></li>
-          <li><a href="https://www.facebook.com/share/17Lnfj2rWM/?mibextid=wwXIfr"><img class="media-icon"
-                src="assets/icons/facebook.png" alt="Cafe Facebook"></a></li>
-          <li><a href="https://snapchat.com/t/KlfgmVgj"><img class="media-icon" src="assets/icons/snapchat.png"
-                alt="Cafe Snapchat"></a></li>
-        </ul>
+      <!-- Social Icons -->
+      <div class="social-icons flex">
+        <a href="https://www.instagram.com/vero_coffee" class="icon-hover" aria-label="Instagram">
+          <img src="assets/icons/instagram.png" alt="Instagram Icon">
+        </a>
+        <a href="https://www.facebook.com/share/17Lnfj2rWM" class="icon-hover" aria-label="Facebook">
+          <img src="assets/icons/facebook.png" alt="Facebook Icon">
+        </a>
+        <a href="https://snapchat.com/t/KlfgmVgj" class="icon-hover" aria-label="Snapchat">
+          <img src="assets/icons/snapchat.png" alt="Snapchat Icon">
+        </a>
       </div>
     </div>
 
-
-    <p id="developer">Developed by: Helin Younis</p>
-
+    <!-- Developer Credit -->
+    <p id="developer">
+      <a href="https://www.linkedin.com/in/helin-youns" target="_blank" rel="noopener">Developed by: Helin Younis</a>
+    </p>
   </footer>
   <script src="assets/js/main.js"></script>
 </body>

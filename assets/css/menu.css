@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap&family=Imperial+Script&display=swap');
+@import "color_palette.css";
+
+/*==============================
+  Global Utility
+==============================*/
+:root {
+  --menuItemFontSize: 1.125rem;
+  --menuTitleSize: 2.5rem;
+  --menuDescSize: 0.875rem;
+  --menuPriceSize: 1.3rem;
+  --menuImageWidth: 430px;
+  --menuImageHeight: 480px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  scroll-padding-top: 60px;
+  /* Account for sticky top nav if any */
+  font-family: 'Libre Baskerville', serif;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*==============================
+  Menu Section
+==============================*/
+.menu-category-wrapper {
+  position: sticky;
+  top: 60px;
+  z-index: 1000;
+
+  background-color: rgb(255, 255, 255,0.6);
+  backdrop-filter: blur(10px);
+
+  padding: 0.5em 0;
+}
+
+.menu-category ul {
+  gap: 1.25em;
+}
+
+.menu-category ul li {
+  position: relative;
+  font-family: "Caprasimo", serif;
+  font-size: var(--menuItemFontSize);
+  color: var(--secondaryAccent);
+  font-style: italic;
+  cursor: pointer;
+  padding: 1.25em 0.5em;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.6em;
+}
+
+.menu-category ul li.selected-category {
+  color: var(--primery);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.selected-category .selected-line {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 100%;
+  background-color: var(--primery);
+}
+
+.hover-category::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primery);
+  transition: transform 0.3s ease;
+}
+
+.hover-category:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.hover-category:hover {
+  color: var(--primery);
+}
+
+/*==============================
+  Menu Wrapper
+==============================*/
+.menu-wrapper {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin-top: 2em;
+  gap: 2em;
+  padding: 0 2em;
+  flex-wrap: nowrap;
+  /* prevent wrapping */
+}
+
+.menu-image-container {
+  position: sticky;
+  top: 155px;
+  width: var(--menuImageWidth);
+  height: var(--menuImageHeight);
+  flex-shrink: 0;
+  /* Do not shrink */
+  z-index: 1;
+  /* Stay above background if needed */
+}
+
+
+.menu-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 4px solid var(--sectionBackground);
+  border-radius: 4px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+/*==============================
+  Menu Grid
+==============================*/
+.menu {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  border-top: 1px solid var(--headerBackground);
+  margin-bottom: 2em;
+}
+
+
+.item-name,
+.item-price {
+  border-bottom: 1px solid var(--headerBackground);
+}
+
+.item-name {
+  border-right: 1px solid var(--headerBackground);
+  padding: 1em 2.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+.item-name h4 {
+  font-size: 1.4rem;
+  font-family: "Caprasimo", serif;
+  color: var(--primery);
+  font-weight: 520;
+  word-spacing: 1px;
+}
+
+.item-name p {
+  font-style: italic;
+  text-align: left;
+  font-size: var(--menuDescSize);
+  color: var(--brightAccent);
+  font-family: "Caprasimo", serif;
+}
+
+.item-price {
+  text-align: center;
+  font-size: var(--menuPriceSize);
+  font-family: "Caprasimo", serif;
+  color: var(--primery);
+  font-weight: 520;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.price-curency {
+  padding-left: 0.4em;
+  font-size: 0.75rem;
+  font-weight: 200;
+  color: #e0e0e0;
+}
+
+/*==============================
+  Section Titles
+==============================*/
+.menu-title-container {
+  text-align: center;
+  margin: 3em 0;
+}
+
+.menu-title-container img {
+  width: 220px;
+  height: auto;
+  margin-bottom: 1.5em;
+  object-fit: cover;
+}
+
+.menu-title-container h2 {
+  font-size: var(--menuTitleSize);
+  font-family: "Caprasimo", serif;
+  font-weight: 500;
+  margin-bottom: 0.4em;
+}
+
+.menu-title-line {
+  width: 80px;
+  height: 2px;
+  background-color: var(--brightAccent);
+  margin: 5px auto 0;
+}
+
+/*==============================
+  Responsive Design
+==============================*/
+@media (max-width: 1024px) {
+  .menu-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-image-container {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .menu {
+    grid-template-columns: 1fr;
+  }
+
+  .item-name {
+    border-right: none;
+  }
+}
