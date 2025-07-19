@@ -236,6 +236,7 @@ main {
 /* Dropdown */
 .lang-dropdown {
   position: relative;
+  z-index: 1000;
 }
 
 .lang-menu {
@@ -244,7 +245,7 @@ main {
   top: 100%;
   left: 0;
   background-color: var(--whiteContrast);
-  z-index: 100;
+  z-index: 1001;
   width: 100%;
   text-align: center;
 }

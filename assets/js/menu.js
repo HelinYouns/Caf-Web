@@ -506,13 +506,35 @@ function setupImageUpdateOnScroll() {
           rect.top < window.innerHeight / 2 &&
           rect.bottom > window.innerHeight / 2
         ) {
+          // Update image
           imageElement.src = imageMap[category];
-          break;
+
+          // Highlight correct nav category
+          categoryList.forEach((li) => {
+            const target = li.getAttribute("data-target");
+            const line = li.querySelector(".selected-line");
+            if (target === category) {
+              li.classList.remove("hover-category");
+              li.classList.add("selected-category");
+              if (!line) {
+                const newLine = document.createElement("span");
+                newLine.classList.add("selected-line");
+                li.appendChild(newLine);
+              }
+            } else {
+              li.classList.remove("selected-category");
+              li.classList.add("hover-category");
+              if (line) line.remove();
+            }
+          });
+
+          break; // only one active section at a time
         }
       }
     }
   });
 }
+
 
 // Initialize Menu Page
 function initMenuPage() {
