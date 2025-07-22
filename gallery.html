@@ -14,11 +14,20 @@
     <div class="navbar-wrapper" id="navbar-wrapper">
       <nav class="navbar flex align-center justify-space-between" id="navbar">
 
-        <div class="logo caprasimo-regular">
-          <span class="logo-script imperial-script-regular">Vero&nbsp;</span> Coffee
+        <div class="logo caprasimo-regular flex justify-center align-center">
+          <span class="logo-script-vero" data-key="vero">Vero&nbsp;</span> <span class="logo-coffee"
+            data-key="coffee">Coffee</span>
         </div>
+       
+          <div id="nav-icon3">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+      
 
-        <ul class="nav-links flex align-center caprasimo-regular">
+        <ul class="nav-links caprasimo-regular">
 
           <li><a href="index.html" data-key="home">Home</a></li>
           <li><a href="menu.html" data-key="menu" id="menu-link">Menu</a></li>
@@ -27,82 +36,44 @@
           <li><a href="index.html#contact" data-key="contact">Contact</a></li>
 
           <li class="lang-dropdown">
-            <button class="lang-btn caprasimo-regular" aria-haspopup="true" aria-expanded="false" data-key="english">
-              English <img class="icon-s" src="assets/icons/arrow.png" alt="Dropdown arrow">
+            <button class="lang-btn caprasimo-regular">
+              <span data-key="english">English</span>
+              <img class="icon-s" src="assets/icons/arrow.png" alt="Dropdown arrow">
             </button>
             <ul class="lang-menu">
-              <li><a href="#" class="amiri-regular" data-lang="ku" data-key="kurdish">کوردی</a></li>
-              <li><a href="#" class="amiri-regular" data-lang="ar" data-key="arabic">عربي</a></li>
+              <li><a href="#" data-lang="en" data-key="english">English</a></li>
+              <li><a href="#" data-lang="ku" data-key="kurdish">کوردی</a></li>
+              <li><a href="#" data-lang="ar" data-key="arabic">عربي</a></li>
             </ul>
           </li>
-
         </ul>
       </nav>
     </div>
   </header>
+
   <main>
 
-    <div class="gallery-header">
-      <h2 class="h2-style">Photo Gallery</h2>
+    <div class="top-header">
+      <h2 class="h2-style" data-key="photoGallery">Photo Gallery</h2>
     </div>
 
-    <section class="gallery-section">
-      <!-- Row 1: Images Right, Text Left -->
-      <div class="gallery-row">
+    <div id="gallery-container"></div>
 
-        <div class="gallery-info">
-          <h2 class="h2-style">Step Into Our Café World</h2>
-          <img src="assets/icons/nature.png" alt="Nature Icon">
-          <p class="description-p">
-            Take a peek into the moments we’ve brewed — smiles,
-            events, and everything coffee. Every visit is a story. Here’s a look into the good times
-            and great coffee shared at Vero. Every visit is a story. Here’s a look into the good times
-            and great coffee shared at Vero. Every visit is a story. Here’s a look into the good times
-            and great coffee shared at Vero.
-          </p>
 
-        </div>
-        <div class="gallery-grid">
-          <div class="gallery-image-wrapper"><img src="assets/images/gallary.jpeg" alt="Image in Gallery" /></div>
-          <div class="gallery-image-wrapper"><img src="assets/images/gallary.jpeg" alt="Image in Gallery" /></div>
-          <div class="gallery-image-wrapper"><img src="assets/images/gallary.jpeg" alt="Image in Gallery" /></div>
-          <div class="gallery-image-wrapper"><img src="assets/images/gallary.jpeg" alt="Image in Gallery" /></div>
-        </div>
-      </div>
-      <span class="line"></span>
-      <!-- Row 2: Images Left, Text Right -->
-      <div class="gallery-row reverse">
-        <div class="gallery-info">
-          <h2 class="h2-style">Brewed Moments</h2>
-          <img src="assets/icons/nature.png" alt="Nature Icon">
-          <p class="description-p">
-            Every visit is a story. Here’s a look into the good times
-            and great coffee shared at Vero. Every visit is a story. Here’s a look into the good times
-            and great coffee shared at Vero. Every visit is a story. Here’s a look into the good times
-            and great coffee shared at Vero.
-          </p>
-        </div>
-        <div class="gallery-grid">
-          <div class="gallery-image-wrapper"><img src="assets/images/gallary.jpeg" alt="Image in Gallery" /></div>
-          <div class="gallery-image-wrapper"><img src="assets/images/gallary.jpeg" alt="Image in Gallery" /></div>
-          <div class="gallery-image-wrapper"><img src="assets/images/gallary.jpeg" alt="Image in Gallery" /></div>
-          <div class="gallery-image-wrapper"><img src="assets/images/gallary.jpeg" alt="Image in Gallery" /></div>
-        </div>
-      </div>
-    </section>
 
   </main>
+
   <footer>
     <span class="footer-line"></span>
 
     <div class="footer-wrapper flex align-center justify-between wrap">
 
       <!-- Cafe Name -->
-      <div class="cafe-div">Vero Coffee</div>
+      <div class="cafe-div" data-key="cafeName">Vero Coffee</div>
 
       <!-- Cafe Info -->
       <div class="cafe-info">
-        <a href="https://maps.app.goo.gl/h7afW4Qnp9x4MeBB6">Rahimawa, Kirkuk, Iraq</a>
+        <a href="https://maps.app.goo.gl/h7afW4Qnp9x4MeBB6" data-key="branche1">Rahimawa, Kirkuk, Iraq</a>
       </div>
 
       <!-- Social Icons -->
@@ -124,7 +95,9 @@
       <a href="https://www.linkedin.com/in/helin-youns" target="_blank" rel="noopener">Developed by: Helin Younis</a>
     </p>
   </footer>
+  <script src="assets/js/lang.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/gallery.js"></script>
 </body>
 
 </html>

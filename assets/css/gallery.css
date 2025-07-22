@@ -1,23 +1,20 @@
-.gallery-header {
-  background-color: var(--whiteContrast);
 
-  padding: 90px 20px 40px;
-  text-align: center;
-}
-
-.gallery-header .h2-style {
+.top-header .h2-style {
   font-size: 2.2em;
 }
 
 
 /* Blog Section */
-.gallery-section {
+#gallery-container {
   display: flex;
   flex-direction: column;
   gap: 4em;
   padding: 2em 3em;
+  max-width: 1300px;
+  margin: 0 auto;
   overflow: visible;
 }
+
 
 .gallery-row {
   display: grid;
@@ -26,20 +23,21 @@
   gap: 3em;
 }
 
-/* Reverse the row layout */
-.gallery-row.reverse {
+/* Alternate layout: odd rows normal, even rows reversed */
+.gallery-row:nth-child(even) {
   direction: rtl;
 }
 
-.gallery-row.reverse .gallery-info {
+.gallery-row:nth-child(even) .gallery-info {
   direction: ltr;
-  /* Fix inner text direction */
+  /* Fix text direction back to normal */
 }
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(2, 250px);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1em;
+  justify-items: center;
 }
 
 .gallery-image-wrapper {
@@ -50,7 +48,6 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   overflow: hidden;
 }
-
 .gallery-image-wrapper img {
   width: 100%;
   height: 100%;
@@ -62,9 +59,7 @@
 
 .gallery-image-wrapper:hover img {
   transform: scale(1.05);
-  /* Slight zoom-in */
 }
-
 
 .gallery-info {
   display: flex;
@@ -98,4 +93,50 @@
   width: 100%;
   background-color: var(--headerBackground);
   display: block;
+}
+
+/* Tablet breakpoint: smaller images, same layout */
+@media (max-width: 1024px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 180px);
+    gap: 1em;
+  }
+
+  .gallery-image-wrapper {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* Mobile breakpoint: stack info above images, adjust size */
+@media (max-width: 800px) {
+  .gallery-row {
+    grid-template-columns: 1fr;
+    gap: 2em;
+    direction: ltr !important;
+  }
+
+  .gallery-info {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 1em;
+    justify-items: center;
+  }
+
+  .gallery-image-wrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+  }
+
+  .gallery-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }

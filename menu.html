@@ -16,11 +16,20 @@
     <div class="navbar-wrapper" id="navbar-wrapper">
       <nav class="navbar flex align-center justify-space-between" id="navbar">
 
-        <div class="logo caprasimo-regular">
-          <span class="logo-script imperial-script-regular">Vero&nbsp;</span> Coffee
+        <div class="logo caprasimo-regular flex justify-center align-center">
+          <span class="logo-script-vero" data-key="vero">Vero&nbsp;</span> <span class="logo-coffee"
+            data-key="coffee">Coffee</span>
         </div>
 
-        <ul class="nav-links flex align-center caprasimo-regular">
+        <div id="nav-icon3">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+
+        <ul class="nav-links caprasimo-regular">
 
           <li><a href="index.html" data-key="home">Home</a></li>
           <li><a href="menu.html" data-key="menu" id="menu-link">Menu</a></li>
@@ -29,43 +38,43 @@
           <li><a href="index.html#contact" data-key="contact">Contact</a></li>
 
           <li class="lang-dropdown">
-            <button class="lang-btn caprasimo-regular" aria-haspopup="true" aria-expanded="false" data-key="english">
-              English <img class="icon-s" src="assets/icons/arrow.png" alt="Dropdown arrow">
+            <button class="lang-btn caprasimo-regular">
+              <span data-key="english">English</span>
+              <img class="icon-s" src="assets/icons/arrow.png" alt="Dropdown arrow">
             </button>
             <ul class="lang-menu">
-              <li><a href="#" class="amiri-regular" data-lang="ku" data-key="kurdish">کوردی</a></li>
-              <li><a href="#" class="amiri-regular" data-lang="ar" data-key="arabic">عربي</a></li>
+              <li><a href="#" data-lang="en" data-key="english">English</a></li>
+              <li><a href="#" data-lang="ku" data-key="kurdish">کوردی</a></li>
+              <li><a href="#" data-lang="ar" data-key="arabic">عربي</a></li>
             </ul>
           </li>
-
         </ul>
       </nav>
     </div>
   </header>
+
   <main>
 
     <div class="top-header">
-      <h2 class="h2-style">The Menu</h2>
+      <h2 class="h2-style" data-key="theMenu">The Menu</h2>
     </div>
-
 
     <div class="menu-category-wrapper" id="category-wrapper">
       <nav class="menu-category">
-        <ul class="flex align-center justify-center" id="category-list">
-          <li class="selected-category flex align-center justify-center" data-target="hot-drinks">
+        <ul class="caprasimo-regular" id="category-list">
+          <li class="selected-category flex align-center justify-center" data-target="hot-drinks" data-key="hotDrink">
             HOT DRINKS
             <span class="selected-line"></span>
           </li>
-          <li class="hover-category" data-target="cold-drinks">COLD DRINKS</li>
-          <li class="hover-category" data-target="fresh-drinks">FRESH DRINKS</li>
-          <li class="hover-category" data-target="milkshake">MILKSHAKE</li>
-          <li class="hover-category" data-target="mojito">MOJITO</li>
-          <li class="hover-category" data-target="frappe">FRAPPE</li>
-          <li class="hover-category" data-target="sweets">SWEETS</li>
+          <li class="hover-category" data-target="cold-drinks" data-key="coldDrink">COLD DRINKS</li>
+          <li class="hover-category" data-target="fresh-drinks" data-key="freshDrink">FRESH DRINKS</li>
+          <li class="hover-category" data-target="milkshake" data-key="milkshake">MILKSHAKE</li>
+          <li class="hover-category" data-target="mojito" data-key="mojito">MOJITO</li>
+          <li class="hover-category" data-target="frappe" data-key="frappe">FRAPPE</li>
+          <li class="hover-category" data-target="sweets" data-key="sweet">SWEETS</li>
         </ul>
       </nav>
     </div>
-
 
     <div class="menu-wrapper">
       <div class="menu-image-container">
@@ -74,17 +83,18 @@
       <div id="menu-container"></div>
     </div>
   </main>
+
   <footer>
     <span class="footer-line"></span>
 
     <div class="footer-wrapper flex align-center justify-between wrap">
 
       <!-- Cafe Name -->
-      <div class="cafe-div">Vero Coffee</div>
+      <div class="cafe-div" data-key="cafeName">Vero Coffee</div>
 
       <!-- Cafe Info -->
       <div class="cafe-info">
-        <a href="https://maps.app.goo.gl/h7afW4Qnp9x4MeBB6">Rahimawa, Kirkuk, Iraq</a>
+        <a href="https://maps.app.goo.gl/h7afW4Qnp9x4MeBB6" data-key="branche1">Rahimawa, Kirkuk, Iraq</a>
       </div>
 
       <!-- Social Icons -->
@@ -106,6 +116,9 @@
       <a href="https://www.linkedin.com/in/helin-youns" target="_blank" rel="noopener">Developed by: Helin Younis</a>
     </p>
   </footer>
+
+
+  <script src="assets/js/lang.js"></script>
   <script src="assets/js/menu.js"></script>
   <script src="assets/js/main.js"></script>
 </body>

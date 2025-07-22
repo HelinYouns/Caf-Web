@@ -12,20 +12,52 @@ function changeLanguage(lang) {
       updateText(window.translations);
       localStorage.setItem("language", lang);
 
-      // Optional: update button label manually
-      const langBtn = document.querySelector(".lang-btn");
-      langBtn.textContent =
-        lang === "ku"
-          ? "کوردی "
-          : lang === "ar"
-          ? "عربي "
-          : "en"
-          ? "English "
-          : "English ";
+      // Update direction
+      const root = document.documentElement;
+      if (lang === "ar" || lang === "ku") {
+        root.setAttribute("dir", "rtl");
+        root.classList.add("rtl");
+        root.classList.remove("ltr");
+      } else {
+        root.setAttribute("dir", "ltr");
+        root.classList.add("ltr");
+        root.classList.remove("rtl");
+      }
+
+      // Update language button label
+      const langBtnText = document.querySelector(".lang-btn span");
+      if (lang === "ku") {
+        langBtnText.textContent = "کوردی";
+      } else if (lang === "ar") {
+        langBtnText.textContent = "عربي";
+      } else {
+        langBtnText.textContent = "English";
+      }
     } else {
       console.error("No translations found in language file.");
     }
+
+    // Hide current language from dropdown
+    document.querySelectorAll(".lang-menu a").forEach((link) => {
+      const itemLang = link.getAttribute("data-lang");
+      link.parentElement.style.display = itemLang === lang ? "none" : "block";
+    });
+
+    // 🌟 Call gallery only if on gallery page
+    if (window.galleryData && typeof renderGallerySection === "function") {
+      renderGallerySection();
+    }
+
+    // 🌟 Call menu only if on menu page
+    if (window.menuData && typeof initMenuPage === "function") {
+      const menuContainer = document.getElementById("menu-container");
+      if (menuContainer) menuContainer.innerHTML = "";
+
+      menuData = window.menuData;
+      initMenuPage();
+    }
   };
+
   document.head.appendChild(script);
 }
 
@@ -33,7 +65,12 @@ function updateText(translations) {
   document.querySelectorAll("[data-key]").forEach((el) => {
     const key = el.getAttribute("data-key");
     if (translations[key]) {
-      el.textContent = translations[key];
+      // Use innerHTML if the value contains HTML tags
+      if (/<[^>]*>/.test(translations[key])) {
+        el.innerHTML = translations[key];
+      } else {
+        el.textContent = translations[key];
+      }
     }
   });
 }

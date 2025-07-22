@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Imperial+Script&display=swap&family=Noto+Sans+JP:wght@100..900&display=swap&family=Amiri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Imperial+Script&display=swap&family=Noto+Sans+JP:wght@100..900&display=swap&family=Amiri&display=swap&family=Lateef:wght@200;300;400;500;600;700;800&family=Noto+Naskh+Arabic:wght@400..700&family=Noto+Nastaliq+Urdu:wght@400..700&display=swap&family=Aref+Ruqaa:wght@400;700&display=swap');
 @import "color_palette.css";
 
 /* Reset & Base */
@@ -31,13 +31,35 @@ body {
   font-family: "Caprasimo", serif;
 }
 
+.imperial-script-regular {
+  font-family: "Imperial Script", cursive;
+}
+
+.caprasimo-regular {
+  font-family: "Caprasimo", serif;
+}
+
 .noto-sans {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+/*Kurdish Fonts */
 .amiri-regular {
   font-family: "Amiri", serif;
 }
+
+.noto-naskh-arabic {
+  font-family: "Noto Naskh Arabic", serif;
+}
+
+.aref-ruqaa-regular {
+  font-family: "Aref Ruqaa", serif;
+}
+
+.lateef-regular {
+  font-family: "Lateef", serif;
+}
+
 
 /* Flex Utils */
 .flex {
@@ -105,44 +127,21 @@ body {
 .description-p {
   text-align: center;
   font-size: 17px;
-  font-family: 'Caprasimo', serif;
   color: var(--primery);
 }
+
 /* Top Headers Style */
 .top-header {
   background-color: var(--whiteContrast);
-  padding: 60px 20px 35px;
+  padding: 70px 20px 35px;
   text-align: center;
 }
 
 /* Layout */
 main {
-  background-color: var(--white);
+  background-color: var(--whiteContrast);
   margin: 4em 2em 0;
   flex-grow: 1;
-}
-
-/* Sections Divider*/
-.section-divider {
-  width: 85%;
-  text-align: center;
-  margin: 3em auto;
-  position: relative;
-}
-
-.divider-icon {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 0 15px;
-  font-size: 24px;
-  color: #393E46;
-}
-
-.fa-mug-hot img {
-  height: auto;
-  width: 350px;
-  object-fit: cover;
 }
 
 /* Navbar */
@@ -182,12 +181,20 @@ main {
   font-weight: bold;
   padding: 0 30px;
   color: var(--primery);
+
+}
+
+.logo-script-vero {
+  font-family: "Imperial Script", cursive;
 }
 
 /* Nav Links */
 .nav-links {
   height: 100%;
   font-style: italic;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .nav-links li {
@@ -212,11 +219,13 @@ main {
   background: none;
   border: none;
   cursor: pointer;
+
 }
 
 .lang-btn {
   font-style: italic;
   font-size: 17px;
+
 }
 
 .nav-links li:hover,
@@ -257,6 +266,7 @@ main {
   color: var(--primery);
   text-decoration: none;
   white-space: nowrap;
+  font-family: "Noto Naskh Arabic", serif;
 }
 
 .lang-menu li a:hover {
@@ -374,6 +384,140 @@ footer {
 #developer a:hover {
   color: var(--primery);
 }
+
+
+/* Hide hamburger by default */
+#nav-icon3 {
+  width: 30px;
+  height: 25px;
+  position: relative;
+  margin: 30px auto;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  display: none;
+  /* You can enable this as needed */
+}
+
+#nav-icon3 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  /* ⬅️ thinner lines */
+  width: 100%;
+  background: var(--primery);
+  border-radius: 5px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+
+#nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon3 span:nth-child(2),
+#nav-icon3 span:nth-child(3) {
+  top: 8px;
+ 
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 16px;
+
+}
+
+
+#nav-icon3.open span:nth-child(1),
+#nav-icon3.open span:nth-child(4) {
+  top: 8px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+
+@media (max-width: 1024px) {
+
+  #nav-icon3 {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 20px;
+    z-index: 1001;
+  }
+
+  .nav-links {
+    /* ✅ override inherited .flex */
+    display: none;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    height: 100vh;
+    width: 250px;
+    background-color: var(--headerBackground);
+    padding-top: 80px;
+    z-index: 1000;
+    transition: right 0.3s ease-in-out;
+  }
+
+  .nav-links.active {
+    display: flex;
+    right: 0;
+    transform: translateX(0%);
+  }
+
+  .nav-links li {
+    display: block;
+    width: 100%;
+    border: none;
+    height: 50px;
+  }
+
+
+  .nav-links a {
+    padding-top: 15px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .lang-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .lang-menu {
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .lang-menu li a {
+    padding-left: 1em;
+  }
+
+  .lang-dropdown:hover .lang-menu {
+    display: block;
+  }
+}
+
+
+
 /* Responsive */
 @media (max-width: 768px) {
   .footer-wrapper {
@@ -385,4 +529,120 @@ footer {
   .cafe-info ul {
     align-items: center;
   }
+}
+
+/* Right to Left Edition */
+/* RTL overrides */
+.rtl .navbar {
+  direction: rtl;
+}
+
+/* Change Fonts */
+.rtl .caprasimo-regular {
+  font-family: "Noto Naskh Arabic", serif !important;
+}
+
+.rtl .imperial-script-regular {
+  font-family: "Aref Ruqaa", serif !important;
+}
+
+/* Change Logo in Header */
+.rtl .logo {
+  padding: 0 30px 0 0;
+}
+
+.rtl .logo .logo-script-vero {
+  font-family: "Aref Ruqaa", serif;
+}
+
+.rtl .logo .logo-coffee {
+  font-family: "Lateef", serif;
+}
+
+.rtl .nav-links li {
+  border-left: none;
+  border-right: 1px solid var(--white);
+}
+
+.rtl .h3-style {
+  font-weight: bold;
+}
+
+.rtl .cafe-name {
+  font-weight: bold;
+}
+
+.rtl .navbar-wrapper.scrolled .nav-links li {
+  border-right: 1px solid var(--headerBackground);
+}
+
+.rtl .lang-dropdown img {
+  margin-left: 0;
+  margin-right: 3px;
+}
+
+/* Menu Page */
+.rtl .item-name p {
+  text-align: right;
+  direction: rtl;
+}
+
+.rtl .item-name {
+  border-right: none;
+  border-left: 1px solid var(--headerBackground);
+}
+
+/* ******************************************* */
+/* LTR reset in case you switch back */
+.ltr .caprasimo-regular {
+  font-family: "Caprasimo", serif !important;
+}
+
+.ltr .imperial-script-regular {
+  font-family: "Imperial Script", cursive !important;
+}
+
+/* Change Logo in Header */
+.ltr .logo {
+  padding: 0 30px 0 0;
+}
+
+.ltr .logo .logo-script-vero {
+  font-family: "Imperial Script", cursive;
+}
+
+.ltr .logo .logo-coffee {
+  font-family: "Caprasimo", serif !important;
+}
+
+.ltr .navbar {
+  direction: ltr;
+}
+
+.ltr .nav-links {
+  flex-direction: row;
+}
+
+.ltr .logo {
+  padding: 0 0 0 30px;
+}
+
+.ltr .nav-links li {
+  border-right: none;
+  border-left: 1px solid var(--white);
+}
+
+.ltr .navbar-wrapper.scrolled .nav-links li {
+  border-left: 1px solid var(--headerBackground);
+}
+
+/* Menu Page */
+.ltr .item-name p {
+  text-align: left;
+  direction: ltr;
+}
+
+.rtl .item-name {
+  border-right: 1px solid var(--headerBackground);
+  border-left: none;
 }

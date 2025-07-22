@@ -7,7 +7,16 @@ window.addEventListener("scroll", function () {
     wrapper.classList.remove("scrolled");
   }
 });
+// Burger icon in header
+document.addEventListener("DOMContentLoaded", function () {
+  const burgerIcon = document.getElementById("nav-icon3");
+  const navLinks = document.querySelector(".nav-links");
 
+  burgerIcon.addEventListener("click", function () {
+    burgerIcon.classList.toggle("open");
+    navLinks.classList.toggle("active");
+  });
+});
 // For Smooth Scrolling
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {

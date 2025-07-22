@@ -171,7 +171,7 @@
   border: 2px solid var(--primery);
   color: var(--primery);
   font-size: 20px;
-  background-color: white;
+  background-color: var(--whiteContrast);
   font-family: 'Caprasimo', serif;
   transition: background 0.3s, color 0.3s;
   margin-top: 2em;
@@ -193,7 +193,6 @@
 /* About Section */
 .about-wrapper {
   display: flex;
-  flex-wrap: wrap;
   gap: 4em;
   justify-content: center;
   align-items: center;
@@ -268,6 +267,7 @@
 }
 
 .services-card {
+  background-color: var(--whiteContrast);
   border: 2px var(--brightAccent) solid;
   padding: 1.5em;
   border-radius: 3px;
@@ -303,6 +303,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  justify-content: center;
   gap: 2em;
   padding: 3em 2em;
 }
@@ -496,7 +497,7 @@
   flex-direction: column;
   gap: 0.6em;
   align-items: center;
-} 
+}
 
 .contact-label {
   font-size: 1.2rem;
@@ -513,9 +514,11 @@
   gap: 0.5em;
   text-decoration: none;
 }
-#whatsapp{
+
+#whatsapp {
   cursor: pointer;
 }
+
 .contact-icon {
   width: 18px;
   height: auto;
@@ -538,8 +541,144 @@
 .delivery-icons img:hover {
   transform: scale(1.1);
 }
+
+.icon-img {
+  width: 80px;
+}
+
 /* Responsive */
+@media (max-width: 1024px) {
+  .h2-style {
+    font-size: 2.3em;
+  }
+
+  .about-wrapper {
+    gap: 3em;
+  }
+
+  .about-image img {
+    width: 430px;
+    height: 560px;
+    border-width: 4px;
+  }
+
+  .about-content {
+    max-width: 450px;
+    gap: 1.4em;
+  }
+}
+
+@media (max-width: 900px) {
+
+  /* Menu Section */
+  .welcome {
+    font-size: 2em;
+    font-weight: 400;
+  }
+
+  .cafe-name {
+    font-size: 3.5em;
+    font-weight: 400;
+  }
+
+  .slogan {
+    font-size: 17px;
+  }
+
+  /* Icons in menu Section */
+  .icon-img {
+    width: 90px;
+  }
+
+  .description-p {
+    font-size: 16px;
+  }
+
+  .secondary-btn {
+    padding: 8px 18px;
+    border: 1px solid var(--primery);
+    font-size: 18px;
+    margin-top: 2em;
+  }
+
+  /* About Section */
+  .about-wrapper {
+    flex-direction: column;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .about-content {
+    max-width: 450px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
+
+  /* Gallery Section */
+  .gallery-wrapper {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+    gap: 2em;
+  }
+
+  .gallery-info,
+  .gallery-image {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .gallery-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+  }
+}
+
 @media (max-width: 768px) {
+
+  .welcome {
+    font-size: 2em;
+    font-weight: 400;
+  }
+
+  .cafe-name {
+    font-size: 3em;
+    font-weight: 400;
+  }
+
+  .slogan {
+    font-size: 16px;
+  }
+  /* Gallery Section */
+  .section{
+    padding: 4em 1em;
+  width: 100%;
+  }
+  .gallery-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+  }
+  /* Icons in menu Section */
+  .icon-img {
+    width: 80px;
+  }
+
+  .secondary-btn {
+    font-size: 17px;
+    margin-top: 1.5em;
+  }
+
+
   .contact-grid-wrapper {
     grid-template-columns: 1fr;
   }
@@ -552,10 +691,7 @@
   .opening-time-wrapper {
     margin: 0 auto;
   }
-}
 
-
-@media (max-width: 768px) {
   .contact-grid-wrapper {
     grid-template-columns: 1fr;
   }
@@ -568,65 +704,34 @@
   .contact-info-grid {
     grid-template-columns: 1fr;
   }
-}
 
-/* ************ */
-.icon {
-  width: auto;
-  height: 30px;
-  transition: transform 0.3s ease;
-}
-
-.icon:hover {
-  transform: scale(1.1);
-}
-
-.icon-phone {
-  height: 20px;
-  width: auto;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .banner-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 150px;
-  }
-
-  .img1,
-  .img4 {
-    grid-column: span 2;
-  }
-
-  .text1,
-  .text2 {
-    grid-column: span 2;
+  /* testimonial section */
+  .testimonial-card {
+    flex: 0 0 100%;
   }
 }
 
+@media (max-width:600px) {
 
-@media (max-width: 768px) {
+  /* About Page */
   .about-wrapper {
-    flex-direction: column;
+    gap: 2em;
+    padding: 0 1.5rem;
   }
 
-  .about-image img,
   .about-content {
-    width: 100%;
-    max-width: 500px;
+    text-align: center;
+    align-items: center;
   }
 
-  .about-header h2 {
-    font-size: 2.2em;
+  .about-image img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
   }
 
   .about-text p {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 768px) {
-  .testimonial-card {
-    flex: 0 0 100%;
+    font-size: 15px;
+    line-height: 1.5;
   }
 }
