@@ -396,7 +396,7 @@ footer {
   transition: 0.5s ease-in-out;
   cursor: pointer;
   display: none;
-  /* You can enable this as needed */
+  order: 0;
 }
 
 #nav-icon3 span {
@@ -421,7 +421,7 @@ footer {
 #nav-icon3 span:nth-child(2),
 #nav-icon3 span:nth-child(3) {
   top: 8px;
- 
+
 }
 
 #nav-icon3 span:nth-child(4) {
@@ -559,6 +559,22 @@ footer {
   font-family: "Lateef", serif;
 }
 
+.rtl .nav-links {
+  left: 0 !important;
+  /* force left side */
+  right: auto !important;
+  /* cancel right positioning */
+  transform: translateX(-100%);
+  /* hide offscreen to the left */
+}
+
+.rtl .nav-links.active {
+  left: 0 !important;
+  right: auto !important;
+  transform: translateX(0%);
+  /* slide into view */
+}
+
 .rtl .nav-links li {
   border-left: none;
   border-right: 1px solid var(--white);
@@ -590,6 +606,17 @@ footer {
 .rtl .item-name {
   border-right: none;
   border-left: 1px solid var(--headerBackground);
+}
+
+/* Humbergr icon */
+.rtl #nav-icon3 {
+  right: auto;
+  left: 20px;
+}
+
+.rtl .item-name {
+  border-right: 1px solid var(--headerBackground);
+  border-left: none;
 }
 
 /* ******************************************* */
@@ -642,7 +669,8 @@ footer {
   direction: ltr;
 }
 
-.rtl .item-name {
-  border-right: 1px solid var(--headerBackground);
-  border-left: none;
+/* Humbergr icon */
+.ltr #nav-icon3 {
+  right: 20px;
+  left: auto;
 }

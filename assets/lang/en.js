@@ -258,19 +258,16 @@ window.menuData = {
     {
       name: "Caramel Macchiato",
       price: "2,500",
-      image: "assets/images/espresso.jpeg",
       description: "Smooth and creamy chocolate delight.",
     },
     {
       name: "Iced Latte",
       price: "3,000",
-      image: "assets/images/espresso.jpeg",
       description: "Chilled espresso with milk and ice.",
     },
     {
       name: "Cold Brew",
       price: "3,000",
-      image: "assets/images/espresso.jpeg",
       description: "Slow-steeped coffee served cold.",
     },
   ],
