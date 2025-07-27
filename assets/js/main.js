@@ -7,6 +7,21 @@ window.addEventListener("scroll", function () {
     wrapper.classList.remove("scrolled");
   }
 });
+// Contact Icons Action.
+// Contact Section
+document.querySelectorAll(".icon-hover").forEach((el) => {
+  const img = el.querySelector("img");
+  const defaultSrc = `assets/icons/${el.dataset.default}`;
+  const hoverSrc = `assets/icons/${el.dataset.hover}`;
+
+  el.addEventListener("mouseover", () => {
+    img.src = hoverSrc;
+  });
+  el.addEventListener("mouseout", () => {
+    img.src = defaultSrc;
+  });
+});
+
 // Burger icon in header
 document.addEventListener("DOMContentLoaded", function () {
   const burgerIcon = document.getElementById("nav-icon3");
@@ -71,17 +86,3 @@ fetch("components/footer.html")
   .then((res) => res.text())
   .then((html) => (document.getElementById("footer").innerHTML = html));
 
-// Contact Icons Action.
-// Contact Section
-document.querySelectorAll(".icon-hover").forEach((el) => {
-  const img = el.querySelector("img");
-  const defaultSrc = `assets/icons/${el.dataset.default}`;
-  const hoverSrc = `assets/icons/${el.dataset.hover}`;
-
-  el.addEventListener("mouseover", () => {
-    img.src = hoverSrc;
-  });
-  el.addEventListener("mouseout", () => {
-    img.src = defaultSrc;
-  });
-});

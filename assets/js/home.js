@@ -46,9 +46,10 @@ const carousel = document.getElementById("carousel");
 testimonials.forEach(({ text, author }) => {
   const card = document.createElement("div");
   card.className = "testimonial-card";
+  card.classList.add("caprasimo-regular");
   card.innerHTML = `
     <p class="testimonial-text">${text}</p>
-    <p class="testimonial-author">${author}</p>
+    <p class="testimonial-author ">${author}</p>
   `;
   carousel.appendChild(card);
 });

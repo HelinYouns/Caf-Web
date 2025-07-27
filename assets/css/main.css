@@ -31,14 +31,6 @@ body {
   font-family: "Caprasimo", serif;
 }
 
-.imperial-script-regular {
-  font-family: "Imperial Script", cursive;
-}
-
-.caprasimo-regular {
-  font-family: "Caprasimo", serif;
-}
-
 .noto-sans {
   font-family: "Noto Sans JP", sans-serif;
 }
@@ -108,17 +100,14 @@ body {
   font-style: italic;
   font-size: 18px;
   color: var(--secondaryAccent);
-  font-family: 'Caprasimo', serif;
 }
 
 .h2-style {
   font-size: 3em;
-  font-family: 'Caprasimo', serif;
   color: var(--primery);
 }
 
 .h3-style {
-  font-family: 'Caprasimo', serif;
   font-weight: 300;
   font-size: 19px;
   color: var(--primery);
@@ -181,11 +170,6 @@ main {
   font-weight: bold;
   padding: 0 30px;
   color: var(--primery);
-
-}
-
-.logo-script-vero {
-  font-family: "Imperial Script", cursive;
 }
 
 /* Nav Links */
@@ -334,13 +318,16 @@ footer {
   color: var(--primery);
 }
 
-.cafe-info a {
+.cafe-info a,
+#developer a {
   color: var(--secondaryAccent);
   text-decoration: none;
 }
 
-.cafe-info a:hover {
+.cafe-info a:hover,
+#developer a:hover {
   color: var(--primery);
+  text-decoration: underline;
 }
 
 /* Social */
@@ -374,17 +361,8 @@ footer {
 #developer {
   margin-top: 1em;
   font-size: 14px;
+  font-style: italic;
 }
-
-#developer a {
-  color: var(--secondaryAccent);
-  text-decoration: none;
-}
-
-#developer a:hover {
-  color: var(--primery);
-}
-
 
 /* Hide hamburger by default */
 #nav-icon3 {
@@ -551,7 +529,7 @@ footer {
   padding: 0 30px 0 0;
 }
 
-.rtl .logo .logo-script-vero {
+.rtl .logo-script-vero {
   font-family: "Aref Ruqaa", serif;
 }
 
@@ -559,13 +537,8 @@ footer {
   font-family: "Lateef", serif;
 }
 
-.rtl .nav-links {
-  left: 0 !important;
-  /* force left side */
-  right: auto !important;
-  /* cancel right positioning */
-  transform: translateX(-100%);
-  /* hide offscreen to the left */
+.rtl .lang-dropdown:hover img {
+  transform: rotate(90deg);
 }
 
 .rtl .nav-links.active {

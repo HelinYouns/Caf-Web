@@ -17,9 +17,9 @@ function renderGallerySection() {
     rowDiv.className = "gallery-row";
 
     const info = document.createElement("div");
-    info.className = "gallery-info";
+    info.className = "gallery-info caprasimo-regular";
     const title = document.createElement("h2");
-    title.className = "h2-style caprasimo-regular";
+    title.className = "h2-style";
     title.textContent = row.title;
 
     const icon = document.createElement("img");
@@ -27,7 +27,7 @@ function renderGallerySection() {
     icon.alt = "Nature Icon";
 
     const desc = document.createElement("p");
-    desc.className = "description-p caprasimo-regular";
+    desc.className = "description-p";
     desc.textContent = row.description;
 
     info.appendChild(title);

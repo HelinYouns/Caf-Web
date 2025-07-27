@@ -1,25 +1,7 @@
 @import "color_palette.css";
 
-/* Home banner 2 */
-.banner-grid {
-  width: 100%;
-  height: 100vh; /* full screen height */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  position: relative;
-}
-
-.banner-grid img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* ensures the image covers entire area without distortion */
-  display: block;
-}
-
 /*Home Banner 1 */
-/* .banner-grid {
+.banner-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 250px;
@@ -38,7 +20,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
-} */
+}
 
 /* Layout Positioning */
 /* Big images */
@@ -94,6 +76,7 @@
   font-weight: bold;
   text-align: center;
   padding: 1rem;
+  font-style: italic;
 }
 
 /* Menu section */
@@ -185,11 +168,10 @@
   width: 10em;
   padding: 10px 20px;
   border-radius: 3px;
-  border: 2px solid var(--primery);
+  border: 1px solid var(--primery);
   color: var(--primery);
   font-size: 20px;
   background-color: var(--whiteContrast);
-  font-family: 'Caprasimo', serif;
   transition: background 0.3s, color 0.3s;
   margin-top: 2em;
 }
@@ -235,7 +217,6 @@
 
 
 .about-text p {
-  font-family: 'Caprasimo', serif;
   font-size: 17px;
   color: var(--secondaryAccent);
   line-height: 1.6;
@@ -369,9 +350,7 @@
   text-align: center;
 }
 
-.testimonial-title {
-  color: var(--primery);
-}
+
 
 .quote-icon {
   width: 32px;
@@ -415,17 +394,16 @@
 }
 
 .testimonial-text {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: var(--primery);
   font-style: italic;
   margin-bottom: 1em;
-  font-family: 'Caprasimo', serif;
 }
 
 .testimonial-author {
   color: var(--secondaryAccent);
-  font-size: 2rem;
-  font-family: 'Imperial Script', cursive;
+  font-size: 1rem;
+  font-style: italic;
 }
 
 .wave-top,
@@ -461,7 +439,7 @@
 .contact-header-left {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 0.5em;
 }
 
 .opening-time-wrapper {
@@ -518,7 +496,6 @@
 
 .contact-label {
   font-size: 1.2rem;
-  font-family: 'Caprasimo', serif;
   color: var(--secondaryAccent);
 }
 
@@ -726,6 +703,19 @@
   .testimonial-card {
     flex: 0 0 100%;
   }
+  /* Customers Section*/
+  .testimonial-carousel-container{
+    width: 400px;
+  }
+  .testimonial-text {
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+
+.testimonial-author {
+  font-size: 0.8rem;
+}
+
 }
 
 @media (max-width:600px) {
