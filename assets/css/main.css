@@ -19,7 +19,7 @@ html {
 
 body {
   /* background-color: var(--primary); */
-  background: url('../images/Body-BG.jpg') center/cover no-repeat fixed;
+  background: url('../images/body-bg.jpg') center/cover no-repeat fixed;
   min-height: 100vh;
 }
 
@@ -510,7 +510,7 @@ footer {
   }
 
   body {
-    background: url('../images/ffyhgu2.jpg') center/cover no-repeat fixed;
+    background: url('../images/body-bg.jpg') center/cover no-repeat fixed;
   }
 
   .footer-wrapper {
