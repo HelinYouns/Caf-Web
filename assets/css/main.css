@@ -19,7 +19,7 @@ html {
 
 body {
   /* background-color: var(--primary); */
-  background: url('../images/ffyhgu2.jpg') center/cover no-repeat fixed;
+  background: url('../images/Body-BG.jpg') center/cover no-repeat fixed;
   min-height: 100vh;
 }
 
@@ -435,6 +435,16 @@ footer {
 
 
 @media (max-width: 768px) {
+
+  /* Logo */
+  .logo {
+    font-size: 26px;
+  }
+
+  .logo img {
+    width: 42px;
+  }
+
   #nav-icon3 {
     display: block;
     position: fixed;
@@ -498,12 +508,7 @@ footer {
   .lang-dropdown:hover .lang-menu {
     display: block;
   }
-}
 
-
-
-/* Responsive */
-@media (max-width: 768px) {
   body {
     background: url('../images/ffyhgu2.jpg') center/cover no-repeat fixed;
   }
