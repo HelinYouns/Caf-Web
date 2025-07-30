@@ -509,10 +509,6 @@ footer {
     display: block;
   }
 
-  body {
-    background: url('../images/body-bg.jpg') center/cover no-repeat fixed;
-  }
-
   .footer-wrapper {
     flex-direction: column;
     align-items: center;
