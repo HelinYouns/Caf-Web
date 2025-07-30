@@ -435,7 +435,9 @@ footer {
 
 
 @media (max-width: 768px) {
-
+main {
+  margin: 2em 1em 0;
+}
   /* Logo */
   .logo {
     font-size: 26px;
