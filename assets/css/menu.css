@@ -69,7 +69,7 @@ body {
 }
 
 .menu-category ul li.selected-category {
-  color: var(--primery);
+  color: var(--secondary);
   font-style: normal;
   font-weight: 600;
 }
@@ -81,7 +81,7 @@ body {
   transform: translateX(-50%);
   height: 2px;
   width: 100%;
-  background-color: var(--primery);
+  background-color: var(--secondary);
 }
 
 .hover-category::after {
@@ -93,7 +93,7 @@ body {
   transform-origin: center;
   width: 100%;
   height: 2px;
-  background-color: var(--primery);
+  background-color: var(--secondary);
   transition: transform 0.3s ease;
 }
 
@@ -102,7 +102,7 @@ body {
 }
 
 .hover-category:hover {
-  color: var(--primery);
+  color: var(--secondary);
 }
 
 /*==============================
@@ -152,7 +152,6 @@ body {
   margin-bottom: 2em;
 }
 
-
 .item-name,
 .item-price {
   border-bottom: 1px solid var(--headerBackground);
@@ -168,7 +167,7 @@ body {
 
 .item-name h4 {
   font-size: 1.4rem;
-  color: var(--primery);
+  color: var(--secondary);
   font-weight: 520;
   word-spacing: 1px;
 }
@@ -182,10 +181,9 @@ body {
 }
 
 .item-price {
-  
   font-size: var(--menuPriceSize);
   font-family: "Caprasimo", serif;
-  color: var(--primery);
+  color: var(--secondary);
   font-weight: 520;
   display: flex;
   align-items: center;
@@ -219,6 +217,7 @@ body {
   font-family: "Caprasimo", serif;
   font-weight: 500;
   margin-bottom: 0.4em;
+  color: var(--secondary);
 }
 
 .menu-title-line {

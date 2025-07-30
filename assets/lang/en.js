@@ -10,7 +10,7 @@ window.translations = {
   gallery: "Gallery",
   contact: "Contact",
   // Home Section
-  homeTitle: "Today's Mood is Sponsered by Vero Coffee",
+  homeTitle: "Today's Mood is Sponsored by Vero Coffee",
   // Menu Section Header Text
   welcomeTitle: "Welcome to",
   cafeName: "VERO COFFEE",
@@ -19,22 +19,22 @@ window.translations = {
   coffeeCollection: "COFFEE CREATIONS",
   coffeeSlogan: "Hot & Cold",
   coffeeDescreption:
-    "Warm your soul or cool down your day with our handcrafted hot and iced coffees. From classic brews to creamy creations, every cup is made with love and premium beans",
+    "Whether you're craving warmth or refreshment, our handcrafted hot and iced coffees are here for you. From timeless classics to indulgent creamy blends, every cup is crafted with care and premium beans.",
   // Milky Moments
   milkyCollection: "MILKY MOMENTS",
   milkySlogan: "Smooth & Creamy",
   milkyDescreption:
-    "Indulge in silky milkshakes and creamy blends that bring joy in every sip. Perfectfor your sweet cravings or a fun mood-lifter.",
+    "Treat yourself to velvety milkshakes and creamy delights crafted to satisfy your sweet cravings and lift your mood—one smooth sip at a time.",
   //Frizzy & Fresh
   freshCollection: "FRESH & FIZZY",
-  freshSlogan: "Mojito & First Drink",
+  freshSlogan: "Mojito & Fresh Drink",
   freshDescreption:
-    "Refreshing and uplifting, our fresh drinks and sparkling mojitos are a perfectescape from the ordinary.",
+    "Crisp, cool, and full of flavor our sparkling mojitos and fresh signature drinks offer the perfect escape from the everyday.",
   // Sweets
   sweetCollection: "SWEET TREATS",
   sweetSlogan: "Cakes & Desserts",
   sweetDescreption:
-    "From rich slices of cake to delicate pastries, our dessert collection is made to satisfy your sweet tooth and pair perfectly with your favorite drink.",
+    "Indulge in rich cakes and delicate pastries, thoughtfully crafted to satisfy your sweet tooth and perfectly complement your favorite drink.",
   // See Menu Button
   seeMenuBtn: "See Menu",
   // About Cafe Section
@@ -50,21 +50,24 @@ window.translations = {
   veroService: "OUR SERVICES",
   serviceSlogan: "Vero Coffee can make your moments much valuable",
   // Coffee Break
-  coffeeBreak: "Coffee Break",
+  coffeeBreak: "COFFEE BREAK",
   coffeeBreakDescreption:
-    "Elevate your events with our coffee break service. We take care of everything from freshly brewed coffee to a full snack arrangement ensuring your guests enjoy a relaxing and flavorful break. ",
+    "Make your events memorable with our coffee break service. From freshly brewed coffee to a curated snack setup, we handle it all so your guests can relax and enjoy every sip and bite.",
   // Music Events
-  musicEvent: "Music Events",
+  musicEvent: "MUSIC EVENTS",
   musicEventDescreption:
-    "  Whether you're vibing solo or hanging with friends, Vero Coffee brings you the rhythm of the city. Chill out to laid-back beats or swing by for our acoustic evenings.",
+    "From solo vibes to nights out with friends, Vero Coffee sets the mood with smooth beats and acoustic evenings. Come for the coffee, stay for the rhythm.",
   // Birthday
-  birthday: "Birthday",
+  birthday: "BIRTHDAY",
   birthdayDescreption:
-    "  Celebrate your birthday at Vero Coffee with great vibes and tasty treats. We provide the cozy space you bring the joy! Decorations and snack tables included.",
+    "Celebrate your special day at Vero Coffee! Enjoy a cozy space, delicious treats, decorations, and snack tables you bring the joy, we’ll take care of the rest.",
+  photoshoot: "PHOTOSHOOT",
+  photoshootDescreption:
+    "Our café is more than just coffee it's a cozy, stylish space made for memories. Come in, enjoy your drink, and feel free to snap your favorite moments.",
   // Gallery Section
   veroMoment: "Vero Moments",
   gallerySlogan:
-    "Discover our cozy atmosphere, special events, and the people who make Vero Coffee feel like home.",
+    "Explore the cozy vibes, memorable events, and wonderful people that make Vero Coffee feel like home.",
   exploreGalleryBtn: "See Gallery",
   // Testimonial Section
   testimonialTitle: "Words From Our Community",
@@ -87,7 +90,7 @@ window.translations = {
   findUs: "Find Us On",
 
   // ***************Menu Page**************
-  theMenu: "The Menu",
+  theMenu: "THE MENU",
   hotDrink: "HOT DRINKS",
   coldDrink: "COLD DRINKS",
   freshDrink: "FRESH DRINKS",
@@ -98,7 +101,7 @@ window.translations = {
   // Currency
   currency: "IQD",
   // ****************Gallery*******************
-   photoGallery:"PHOTO GALLERY",
+  photoGallery: "GALLERY",
 };
 
 window.menuData = {
@@ -494,7 +497,6 @@ window.menuData = {
 };
 window.galleryData = [
   {
-   
     title: "Step Into Our Café World",
     description:
       "Take a peek into the moments we’ve brewed — smiles, events, and everything coffee.",
@@ -506,7 +508,6 @@ window.galleryData = [
     ],
   },
   {
-    
     title: "Brewed Moments",
     description:
       "Every visit is a story. Here’s a look into the good times and great coffee shared at Vero.",

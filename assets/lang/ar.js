@@ -62,7 +62,9 @@ window.translations = {
   birthday: "عيد ميلاد",
   birthdayDescreption:
     "احتفل بعيد ميلادك في مقهى فيرو مع أجواء رائعة وحلويات لذيذة. نوفر لك مساحة دافئة تُسعدك! ديكورات وطاولات للوجبات الخفيفة مشمولة.",
-  // Gallery Section
+   photoshoot:"Photoshot",
+  photoshootDescreption:"Vero Coffee offers the perfect backdrop for your photos. Whether it's a casual hangout or a special day, feel free to snap and share your memories with us.",
+    // Gallery Section
   veroMoment: "لحظات فيرو",
   gallerySlogan:
     "اكتشف أجواءنا المريحة وفعالياتنا الخاصة والأشخاص الذين يجعلون من فيرو كوفي يشعرك وكأنك في منزلك.",
