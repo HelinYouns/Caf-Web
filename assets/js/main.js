@@ -88,16 +88,3 @@ function goToWhatsApp() {
     "_blank"
   );
 }
-
-// Load Header & Footer
-fetch("components/header.html")
-  .then((res) => res.text())
-  .then((html) => {
-    document.getElementById("header").innerHTML = html;
-  })
-  .catch((err) => console.error("Header Load Faild", err));
-
-// Load footer
-fetch("components/footer.html")
-  .then((res) => res.text())
-  .then((html) => (document.getElementById("footer").innerHTML = html));
