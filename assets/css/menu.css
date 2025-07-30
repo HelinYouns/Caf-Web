@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap&family=Imperial+Script&display=swap');
 @import "color_palette.css";
 
 /*==============================
@@ -289,7 +288,10 @@ body {
   justify-content: flex-end;
 }
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .top-header h2{
+  font-size: 1.3em;
+}
   /* Image Container */
   .menu-image-container {
     width: 100%;

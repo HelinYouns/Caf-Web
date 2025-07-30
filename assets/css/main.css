@@ -122,7 +122,7 @@ body {
 
 /* Top Headers Style */
 .top-header {
-   font-size: 2.2em;
+  font-size: 2.2em;
   color: var(--secondary);
   background-color: var(--white);
   padding: 70px 20px 35px;
@@ -175,11 +175,12 @@ main {
   color: var(--primary);
 }
 
-.logo img{
+.logo img {
   width: 52px;
   height: auto;
   margin-right: 0.1em;
 }
+
 /* Nav Links */
 .nav-links {
   height: 100%;
@@ -389,7 +390,6 @@ footer {
   display: block;
   position: absolute;
   height: 2px;
-  /* ⬅️ thinner lines */
   width: 100%;
   background: var(--secondary);
   border-radius: 5px;
@@ -432,37 +432,36 @@ footer {
 }
 
 
-@media (max-width: 1024px) {
 
+
+@media (max-width: 768px) {
   #nav-icon3 {
     display: block;
     position: fixed;
     top: 0;
     right: 20px;
-    z-index: 1001;
+    z-index: 1002;
   }
 
   .nav-links {
-    /* ✅ override inherited .flex */
     display: none;
     flex-direction: column !important;
     align-items: flex-start !important;
     justify-content: flex-start !important;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 60px;
     right: 0;
-    transform: translateX(100%);
-    height: 100vh;
+    height: calc(100vh - 70px);
     width: 250px;
     background-color: var(--headerBackground);
-    padding-top: 80px;
-    z-index: 1000;
-    transition: right 0.3s ease-in-out;
+    padding-top: 20px;
+    z-index: 1001;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
   }
 
   .nav-links.active {
     display: flex;
-    right: 0;
     transform: translateX(0%);
   }
 
@@ -472,7 +471,6 @@ footer {
     border: none;
     height: 50px;
   }
-
 
   .nav-links a {
     padding-top: 15px;
@@ -506,6 +504,10 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+  body {
+    background: url('../images/ffyhgu2.jpg') center/cover no-repeat fixed;
+  }
+
   .footer-wrapper {
     flex-direction: column;
     align-items: center;
@@ -536,9 +538,11 @@ footer {
 .rtl .logo {
   padding: 0 30px 0 0;
 }
-.rtl .logo img{
+
+.rtl .logo img {
   margin-left: 0.1em;
 }
+
 .rtl .logo-script-vero {
   font-family: "Aref Ruqaa", serif;
 }
@@ -616,9 +620,11 @@ footer {
 .ltr .logo {
   padding: 0 30px 0 0;
 }
-.ltr .logo img{
+
+.ltr .logo img {
   margin-right: 0.1em;
 }
+
 .ltr .logo .logo-script-vero {
   font-family: "Imperial Script", cursive;
 }

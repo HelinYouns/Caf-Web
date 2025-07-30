@@ -27,11 +27,27 @@ document.addEventListener("DOMContentLoaded", function () {
   const burgerIcon = document.getElementById("nav-icon3");
   const navLinks = document.querySelector(".nav-links");
 
-  burgerIcon.addEventListener("click", function () {
+  // Toggle nav open/close on burger icon click
+  burgerIcon.addEventListener("click", function (e) {
+    e.stopPropagation(); // prevent it from bubbling to document
     burgerIcon.classList.toggle("open");
     navLinks.classList.toggle("active");
   });
+
+  // Prevent clicks inside nav from closing it
+  navLinks.addEventListener("click", function (e) {
+    e.stopPropagation();
+  });
+
+  // Close nav when clicking outside
+  document.addEventListener("click", function () {
+    if (navLinks.classList.contains("active")) {
+      navLinks.classList.remove("active");
+      burgerIcon.classList.remove("open");
+    }
+  });
 });
+
 // For Smooth Scrolling
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
@@ -85,4 +101,3 @@ fetch("components/header.html")
 fetch("components/footer.html")
   .then((res) => res.text())
   .then((html) => (document.getElementById("footer").innerHTML = html));
-
