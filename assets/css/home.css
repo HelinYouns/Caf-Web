@@ -850,4 +850,8 @@
     font-size: 15px;
     line-height: 1.5;
   }
+  /* Constact Section */
+  .delivery-icons img {
+  width: 45px;
+}
 }

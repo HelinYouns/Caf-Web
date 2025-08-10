@@ -431,9 +431,6 @@ footer {
   transform: rotate(-45deg);
 }
 
-
-
-
 @media (max-width: 768px) {
 main {
   margin: 2em 1em 0;
