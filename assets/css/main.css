@@ -152,8 +152,9 @@ main {
 .navbar-wrapper.scrolled {
   position: fixed;
   top: 0;
-  left: 1em;
-  right: 1em;
+  left: 0;
+  right: 0;
+  padding: 0 1em;
 }
 
 .navbar {
@@ -436,14 +437,23 @@ footer {
   main {
     margin: 2em 1em 0;
   }
-
+.top-header {
+  font-size: 2em;
+  padding-top: 80px;
+}
   /* Logo */
   .logo {
     font-size: 26px;
   }
-.navbar-wrapper {
-  padding: 0 1em;
-}
+
+  .navbar-wrapper {
+    padding: 0 1em;
+  }
+
+  .navbar-wrapper.scrolled {
+    padding: 0 0.5em;
+  }
+
   .logo img {
     width: 42px;
   }
