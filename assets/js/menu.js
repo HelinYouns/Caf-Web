@@ -6,12 +6,14 @@ const imageElement = document.getElementById("menu-category-image");
 
 // Category to Image Mapping
 const imageMap = {
-  "hot-drinks": "assets/images/hot-drink.jpg",
-  "cold-drinks": "assets/images/cold-drink.jpg",
-  "fresh-drinks": "assets/images/fresh-drink.jpg",
-  milkshake: "assets/images/milkshake.jpg",
-  mojito: "assets/images/mojito.jpg",
+  thecoffee: "assets/images/espresso.jpg",
+  latte: "assets/images/latte.jpg",
   frappe: "assets/images/frappe.jpg",
+  milkshake: "assets/images/milkshake.jpg",
+  "fresh-drinks": "assets/images/fresh-drink.jpg",
+  "vero-special": "assets/images/mojito.jpg",
+  "vero-creation": "assets/images/hot-drink.jpg",
+  toast: "assets/images/tost.jpg",
   sweets: "assets/images/sweets.jpg",
 };
 

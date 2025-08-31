@@ -623,6 +623,14 @@ footer {
   border-right: 1px solid var(--headerBackground);
   border-left: none;
 }
+/* Reusable: force left-to-right in RTL layouts */
+.rtl .force-ltr {
+  direction: ltr;
+  unicode-bidi: isolate;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: left;
+}
 
 /* ******************************************* */
 /* LTR reset in case you switch back */
