@@ -74,13 +74,10 @@ window.scrollTo({
 // Actions
 // See Menu Button
 function goToMenu() {
-  window.location.href = "menu.html";
-}
-function goToHome() {
-  window.location.href = "index.html";
+  window.location.href = "menu/index.html";
 }
 function goToGallery() {
-  window.location.href = "gallery.html";
+  window.location.href = "gallery/index.html";
 }
 function goToWhatsApp() {
   window.open(
