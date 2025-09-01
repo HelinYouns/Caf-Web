@@ -5,7 +5,7 @@ function changeLanguage(lang) {
 
   // Create and load new script
   const script = document.createElement("script");
-  script.src = `assets/lang/${lang}.js`;
+  script.src = `../assets/lang/${lang}.js`;
   script.setAttribute("data-lang", lang);
   script.onload = () => {
     if (window.translations) {
