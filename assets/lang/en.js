@@ -110,117 +110,117 @@ window.menuData = {
   "coffee": [
     {
       name: "Espresso",
-      price: "2,000",
+      price: "2000",
       description:
-        "A classic, bold espresso with a strong and concentrated flavor in every sip.",
+        "A classic, bold espresso with a strong and concentrated flavor in every sip",
     },
     {
       name: "Doppio ",
-      price: "2,500",
+      price: "2500",
       description:
-        "A double shot of strong espresso for a more intense and rich taste.",
+        "A double shot of strong espresso for a more intense and rich taste",
     },
     {
       name: "Qazwan Coffee",
-      price: "2,000",
+      price: "2000",
       description:
-        "Traditional Kurdish coffee prepared in a unique way for an authentic flavor.",
+        "Traditional Kurdish coffee prepared in a unique way for an authentic flavor",
     },
     {
       name: "Turkish Coffee",
-      price: "2,000",
+      price: "2000",
       description:
-        "Thick and rich Turkish coffee served with golden foam and deep aroma.",
+        "Thick and rich Turkish coffee served with golden foam and deep aroma",
     },
     {
       name: "Chocolate Coffee",
-      price: "2,000",
+      price: "2000",
       description:
-        "Coffee blended with chocolate for a creamy and delicious taste.",
+        "Coffee blended with chocolate for a creamy and delicious taste",
     },
     {
       name: "Vero Special Coffee",
-      price: "2,000",
+      price: "2000",
       description:
-        "A special Vero coffee blend with unique flavors found nowhere else.",
+        "A special Vero coffee blend with unique flavors found nowhere else",
     },
     {
       name: "Americano",
-      price: "2,000",
+      price: "2000",
       description:
-        "Espresso diluted with hot water for a smooth and light flavor, perfect all day.",
+        "Espresso diluted with hot water for a smooth and light flavor, perfect all day",
     }  
   ],
 
   "latte": [
     {
       name: "Classic Latte",
-      price: "2,500 - 3,000",
-      description: "Espresso with steamed milk for a smooth and creamy taste.",
+      price: "2500 - 3000",
+      description: "Espresso with steamed milk for a smooth and creamy taste",
     },
     {
       name: "Spanish Latte",
-      price: "2,500 - 3,000",
-      description: "Sweet latte mixed with condensed milk for a rich flavor.",
+      price: "2500 - 3000",
+      description: "Sweet latte mixed with condensed milk for a rich flavor",
     },
     {
       name: "Caramel Latte",
-      price: "2,500 - 3,000",
-      description: "Classic latte infused with delicious caramel sauce.",
+      price: "2500 - 3000",
+      description: "Classic latte infused with delicious caramel sauce",
     },
     {
       name: "Vanilla Latte",
-      price: "2,500 - 3,000",
-      description: "Smooth latte blended with aromatic vanilla flavor.",
+      price: "2500 - 3000",
+      description: "Smooth latte blended with aromatic vanilla flavor",
     },
     {
       name: "Blue Latte",
-      price: "2,500 - 3,000",
-      description: "An innovative latte with a unique blue color and taste.",
+      price: "2500 - 3000",
+      description: "An innovative latte with a unique blue color and taste",
     },
     {
       name: "Mocha",
-      price: "3,000 - 3,500",
-      description: "A mix of espresso, chocolate, and milk for a rich cocoa flavor.",
+      price: "3000 - 3500",
+      description: "A mix of espresso, chocolate, and milk for a rich cocoa flavor",
     },
   ],
 
   "frappe": [
     {
       name: "Greek Frappe",
-      price: "3,000",
-      description: "Iced instant coffee blended with frothy foam, Greek style.",
+      price: "3000",
+      description: "Iced instant coffee blended with frothy foam, Greek style",
     },
     {
       name: "Caramel Frappe",
-      price: "3,000",
-      description: "Cold frappe mixed with creamy caramel sauce.",
+      price: "3000",
+      description: "Cold frappe mixed with creamy caramel sauce",
     },
     {
       name: "Chocolate Frappe",
-      price: "3,000",
-      description: "Rich chocolate frappe with a refreshing creamy twist.",
+      price: "3000",
+      description: "Rich chocolate frappe with a refreshing creamy twist",
     },
     {
       name: "Golden Vero Frappe",
-      price: "3,000",
-      description: "Special golden Vero frappe with signature flavors.",
+      price: "3000",
+      description: "Special golden Vero frappe with signature flavors",
     },
     {
       name: "Coconut & Chocolate",
-      price: "3,000",
-      description: "A tasty mix of creamy coconut and rich chocolate.",
+      price: "3000",
+      description: "A tasty mix of creamy coconut and rich chocolate",
     },
     {
       name: "Dark Chocolate Frappe",
-      price: "3,000",
-      description: "Intense dark chocolate frappe for true cocoa lovers.",
+      price: "3000",
+      description: "Intense dark chocolate frappe for true cocoa lovers",
     },
     {
       name: "Caramel Cappuccino Frappe",
-      price: "3,000",
+      price: "3000",
       description:
-        "Frappe blended with caramel and cappuccino flavors for a rich balance.",
+        "Frappe blended with caramel and cappuccino flavors for a rich balance",
     }
   ],
 
@@ -232,186 +232,186 @@ window.menuData = {
     },
     {
       name: "Nutella Milkshake",
-      price: "3,000",
-      description: "Creamy and sweet milkshake blended with Nutella.",
+      price: "3000",
+      description: "Creamy and sweet milkshake blended with Nutella",
     },
     {
       name: "Oreo Milkshake",
-      price: "3,000",
-      description: "Milkshake with crunchy Oreo pieces for a fun taste.",
+      price: "3000",
+      description: "Milkshake with crunchy Oreo pieces for a fun taste",
     },
     {
       name: "Strawberry Milkshake",
-      price: "3,000",
-      description: "Refreshing milkshake made with natural strawberries.",
+      price: "3000",
+      description: "Refreshing milkshake made with natural strawberries",
     },
     {
       name: "Pistachio Milkshake",
-      price: "3,000",
-      description: "Creamy and rich milkshake blended with pistachio.",
+      price: "3000",
+      description: "Creamy and rich milkshake blended with pistachio",
     }
   ],
 
   "fresh-drinks":[
     {
       name: "Orange",
-      price: "3,000",
-      description: "Fresh orange juice, rich in vitamin C and refreshing.",
+      price: "3000",
+      description: "Fresh orange juice, rich in vitamin C and refreshing",
     },
     {
       name: "Lemon",
-      price: "3,000",
-      description: "Natural lemon juice, fresh and tangy.",
+      price: "3000",
+      description: "Natural lemon juice, fresh and tangy",
     },
     {
       name: "Green Apple",
-      price: "3,000",
-      description: "Fresh green apple juice with a sweet and tangy balance.",
+      price: "3000",
+      description: "Fresh green apple juice with a sweet and tangy balance",
     },
     {
       name: "Cocktail",
-      price: "3,000",
-      description: "A cocktail of fresh fruits full of natural flavors.",
+      price: "3000",
+      description: "A cocktail of fresh fruits full of natural flavor",
     }
   ],
 
   "vero-special": [
     {
       name: "Vero Mix",
-      price: "3,000",
+      price: "3000",
       description:
-        "A refreshing Vero blend with unique fruity flavors.",
+        "A refreshing Vero blend with unique fruity flavors",
     },
     {
       name: "Black Vero",
-      price: "3,000",
-      description: "Refreshing black Vero drink with a special aroma.",
+      price: "3000",
+      description: "Refreshing black Vero drink with a special aroma",
     },
     {
       name: "Red Vero",
-      price: "3,000",
-      description: "Vero drink with a rich red color and fruity taste.",
+      price: "3000",
+      description: "Vero drink with a rich red color and fruity taste",
     },
     {
       name: "Green Slush",
-      price: "3,000",
-      description: "Green Slush with a tangy and refreshing flavor.",
+      price: "3000",
+      description: "Green Slush with a tangy and refreshing flavor",
     },
     {
       name: "Red Slush",
-      price: "3,000",
-      description: "Slush with a rich red color and fruity taste.",
+      price: "3000",
+      description: "Slush with a rich red color and fruity taste",
     },
     {
       name: "Pomegranate Slush",
-      price: "3,000",
+      price: "3000",
       description:
-        "Icy slush with natural, refreshing pomegranate flavor.",
+        "Icy slush with natural, refreshing pomegranate flavor",
     },
     {
       name: "Mexican",
-      price: "3,000",
-      description: "A tropical drink rich with mixed fruit flavors.",
+      price: "3000",
+      description: "A tropical drink rich with mixed fruit flavors",
     },
     {
       name: "Mexican Pomegranate",
-      price: "3,000",
-      description: "A fruity mix with refreshing pomegranate flavor.",
+      price: "3000",
+      description: "A fruity mix with refreshing pomegranate flavor",
     },
     {
       name: "Mexican Soda",
-      price: "3,000",
-      description: "A sparkling soda drink with tropical flavors.",
+      price: "3000",
+      description: "A sparkling soda drink with tropical flavors",
     },
     {
       name: "Mango Mojito",
-      price: "3,000",
-      description: "Tropical mojito blended with fresh mango.",
+      price: "3000",
+      description: "Tropical mojito blended with fresh mango",
     },
     {
       name: "Lemon Mint Mojito",
-      price: "3,000",
-      description: "Classic mojito with fresh lemon and mint.",
+      price: "3000",
+      description: "Classic mojito with fresh lemon and mint",
     },
   ],
 
   "vero-creation": [
     {
       name: "Dark Chocolate",
-      price: "2,000",
-      description: "Iced chocolate drink, rich and refreshing.",
+      price: "2000",
+      description: "Iced chocolate drink, rich and refreshing",
     },
     {
       name: "Hot Chocolate",
-      price: "2,000",
-      description: "Warm, rich, and creamy hot chocolate.",
+      price: "2000",
+      description: "Warm, rich, and creamy hot chocolate",
     },
     {
       name: "Cappuccino",
-      price: "2,000",
-      description: "Espresso with steamed milk and thick foam.",
+      price: "2000",
+      description: "Espresso with steamed milk and thick foam",
     },
     {
       name: "Caramel Cappuccino",
-      price: "3,000",
-      description: "Cappuccino blended with sweet, rich caramel.",
+      price: "3000",
+      description: "Cappuccino blended with sweet, rich caramel",
     },
     {
       name: "Hot Cocoa",
-      price: "2,000",
-      description: "Comforting hot chocolate with deep cocoa flavor.",
+      price: "2000",
+      description: "Comforting hot chocolate with deep cocoa flavor",
     },
     {
       name: "Lotus",
-      price: "2,500",
-      description: "Special drink blended with Lotus biscuits flavor.",
+      price: "2500",
+      description: "Special drink blended with Lotus biscuits flavor",
     }
   ],
 
   toast:[
     {
       name: "Cheese Toast",
-      price: "1,500",
-      description: "Toasted bread with melted cheese.",
+      price: "1500",
+      description: "Toasted bread with melted cheese",
     },
     {
       name: "Nutella Toast",
-      price: "1,500",
-      description: "Toasted bread topped with creamy Nutella.",
+      price: "1500",
+      description: "Toasted bread topped with creamy Nutella",
     },
     {
       name: "Turkey Toast",
-      price: "1,500",
-      description: "Toasted sandwich filled with smoked turkey slices.",
+      price: "1500",
+      description: "Toast with cheddar cheese and black olives",
     },
   ],
 
   sweets: [
     {
       name: "Nutella Croissant",
-      price: "2,500",
-      description: "Fresh croissant filled with delicious Nutella.",
+      price: "2500",
+      description: "Fresh croissant filled with delicious Nutella",
     },
     {
       name: "Cheese Croissant",
-      price: "2,500",
-      description: "Croissant stuffed with melted cheese.",
+      price: "2500",
+      description: "Croissant stuffed with melted cheese",
     },
     {
-      name: "Plain Croissant",
-      price: "2,500",
-      description: "Fresh plain croissant, light and flaky.",
+      name: "Classic Croissant",
+      price: "2500",
+      description: "Fresh  croissant, light and flaky",
     },
     {
       name: "Trileçe",
-      price: "2,000",
+      price: "2000",
       description:
-        "It is a light sponge cake, soaked in milk and topped with whipped cream and caramel.",
+        "It is a light sponge cake, soaked in milk and topped with whipped cream and caramel",
     },
     {
       name: "Cookies",
-      price: "2,000",
-      description: "Freshly baked cookies filled with chocolate chips.",
+      price: "2000",
+      description: "Freshly baked cookies filled with chocolate chips",
     }
   ],
 };
@@ -422,10 +422,10 @@ window.galleryData = [
     description:
       "Take a peek into the moments we’ve brewed — smiles, events, and everything coffee.",
      images: [
-      "assets/images/vero_photos (12).jpg",
-      "assets/images/vero_photos (6).jpg",
-      "assets/images/vero_photos (7).jpg",
-      "assets/images/vero_photos (9).jpg",
+      "../assets/images/vero_photos (12).jpg",
+      "../assets/images/vero_photos (6).jpg",
+      "../assets/images/vero_photos (7).jpg",
+      "../assets/images/vero_photos (9).jpg",
     ],
   },
   {
@@ -433,10 +433,10 @@ window.galleryData = [
     description:
       "Every visit is a story. Here’s a look into the good times and great coffee shared at Vero.",
     images: [
-      "assets/images/vero_photos (15).jpg",
-      "assets/images/vero_photos (11).jpg",
-      "assets/images/vero_photos (13).jpg",
-      "assets/images/vero_photos (14).jpg",
+      "../assets/images/vero_photos (15).jpg",
+      "../assets/images/vero_photos (11).jpg",
+      "../assets/images/vero_photos (13).jpg",
+      "../assets/images/vero_photos (14).jpg",
     ],
   },
 ];
