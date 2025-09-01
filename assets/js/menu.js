@@ -6,15 +6,15 @@ const imageElement = document.getElementById("menu-category-image");
 
 // Category to Image Mapping
 const imageMap = {
-  thecoffee: "assets/images/espresso.jpg",
-  latte: "assets/images/latte.jpg",
-  frappe: "assets/images/frappe.jpg",
-  milkshake: "assets/images/milkshake.jpg",
-  "fresh-drinks": "assets/images/fresh-drink.jpg",
-  "vero-special": "assets/images/mojito.jpg",
-  "vero-creation": "assets/images/hot-drink.jpg",
-  toast: "assets/images/tost.jpg",
-  sweets: "assets/images/sweets.jpg",
+  thecoffee: "../assets/images/espresso.jpg",
+  latte: "../assets/images/latte.jpg",
+  frappe: "../assets/images/frappe.jpg",
+  milkshake: "../assets/images/milkshake.jpg",
+  "fresh-drinks": "../assets/images/mojito.jpg",
+  "vero-special": "../assets/images/fresh-drink.jpg",
+  "vero-creation": "../assets/images/hot-drink.jpg",
+  toast: "../assets/images/tost.jpg",
+  sweets: "../assets/images/sweets.jpg",
 };
 
 // Format Section Titles (e.g., hot-drinks → Hot Drinks)
