@@ -17,6 +17,421 @@
     <div class="navbar-wrapper" id="navbar-wrapper">
       <nav class="navbar flex align-center justify-space-between" id="navbar">
 
+        <a href="#home">
+          <div class="logo caprasimo-regular flex justify-center align-center">
+            <img src="assets/icons/vero-coffee-logo.png" alt="Vero Coffe Logo"> <span class="logo-script-vero"
+              data-key="vero">Vero&nbsp;</span> <span class="logo-coffee" data-key="coffee">Coffee</span>
+          </div>
+        </a>
+
+        <div id="nav-icon3">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+
+        <ul class="nav-links caprasimo-regular">
+
+          <li><a href="#home" data-key="home">Home</a></li>
+          <li><a href="menu/index.html" data-key="menu" id="menu-link">Menu</a></li>
+          <li><a href="#about" data-key="about">About</a></li>
+          <li><a href="#service" data-key="service">Service</a></li>
+          <li><a href="#contact" data-key="contact">Contact</a></li>
+
+          <li class="lang-dropdown">
+            <button class="lang-btn caprasimo-regular">
+              <span data-key="english">English</span>
+              <img class="icon-s" src="assets/icons/arrow.png" alt="Dropdown arrow">
+            </button>
+            <ul class="lang-menu">
+              <li><a href="#" data-lang="en" data-key="english">English</a></li>
+              <li><a href="#" data-lang="ku" data-key="kurdish">کوردی</a></li>
+              <li><a href="#" data-lang="ar" data-key="arabic">عربي</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="banner-grid" id="home">
+      <div class="item img1"><img src="assets/images/vero_photos (10).jpg" alt="Big Image 1"></div>
+      <div class="item text1 caprasimo-regular" data-key="cafeName">VERO COFFEE</div>
+      <div class="item img2"><img src="assets/images/tost.jpg" alt="Medium Image 1"></div>
+      <div class="item text2 caprasimo-regular" data-key="homeTitle">Today's Mood is Sponsored by Vero Coffee</div>
+      <div class="item img3"><img src="assets/images/mojito.jpg" alt="Medium Image 2">
+      </div>
+      <div class="item img4"><img src="assets/images/vero_photos (8).jpg" alt="Big Image 2"></div>
+    </section>
+
+    <section class="section" id="menu">
+
+      <div class="menu-wrapper flex d-column align-center justify-center">
+
+        <div class="menu-header text-center">
+          <p class="welcome imperial-script-regular" data-key="welcomeTitle">Welcome to</p>
+          <h1 class="cafe-name caprasimo-regular" data-key="cafeName">VERO COFFEE</h1>
+          <p class="slogan caprasimo-regular" data-key="cafeSlogan">Where every sip feels like home</p>
+        </div>
+
+        <div class="menu-category">
+          <!-- Category Card -->
+          <div class="category-card caprasimo-regular">
+            <div class="icon-wrapper">
+              <img src="assets/icons/coffee-bean.png" alt="Coffee Beans" class="icon-img" />
+              <span class="hover-line"></span>
+            </div>
+            <div class="category-title">
+              <h3 class="h3-style" data-key="coffeeCollection">COFFEE CREATIONS</h3>
+              <p data-key="coffeeSlogan">Hot & Cold</p>
+            </div>
+            <p class="description-p " data-key="coffeeDescreption">Warm your soul or cool down your day
+              with our
+              handcrafted hot and iced
+              coffees. From classic brews to creamy creations, every cup is made with love and premium beans.</p>
+          </div>
+
+          <div class="category-card caprasimo-regular">
+            <div class="icon-wrapper">
+              <img src="assets/icons/cherries.png" alt="Milkshakes" class="icon-img" />
+              <span class="hover-line"></span>
+            </div>
+            <div class="category-title">
+              <h3 class="h3-style" data-key="milkyCollection">MILKY MOMENTS</h3>
+              <p data-key="milkySlogan">Smooth & Creamy</p>
+            </div>
+            <p class="description-p " data-key="milkyDescreption">Indulge in silky milkshakes and
+              creamy blends that
+              bring joy in every sip. Perfect
+              for your sweet cravings or a fun mood-lifter.</p>
+          </div>
+
+          <div class="category-card caprasimo-regular">
+            <div class="icon-wrapper">
+              <img src="assets/icons/lemonade.png" alt="Mojito" class="icon-img" />
+              <span class="hover-line"></span>
+            </div>
+            <div class="category-title">
+              <h3 class="h3-style" data-key="freshCollection">FRESH & FIZZY</h3>
+              <p data-key="freshSlogan">Mojito & First Drink</p>
+            </div>
+            <p class="description-p " data-key="freshDescreption">Refreshing and uplifting, our fresh
+              drinks and
+              sparkling mojitos are a perfect
+              escape from the ordinary.</p>
+          </div>
+
+          <div class="category-card caprasimo-regular">
+            <div class="icon-wrapper">
+              <img src="assets/icons/cake.png" alt="Cake" class="icon-img" />
+              <span class="hover-line"></span>
+            </div>
+            <div class="category-title">
+              <h3 class="h3-style" data-key="sweetCollection">SWEET TREATS</h3>
+              <p data-key="sweetSlogan">Cakes & Desserts</p>
+            </div>
+            <p class="description-p " data-key="sweetDescreption">From rich slices of cake to delicate
+              pastries, our
+              dessert collection is made to
+              satisfy your sweet tooth and pair perfectly with your favorite drink.</p>
+          </div>
+        </div>
+
+        <button class="secondary-btn caprasimo-regular" data-key="seeMenuBtn" onclick="goToMenu()">See Menu</button>
+      </div>
+    </section>
+
+
+    <section id="about" class="section about-section">
+      <div class="about-wrapper">
+
+        <div class="about-image">
+          <img src="assets/images/vero_photos (10).jpg" alt="Cafe owner photo">
+        </div>
+
+        <div class="about-content">
+          <div class="about-header">
+            <h3 class="imperial-script-regular welcome" data-key="aboutVeroSlogan">About</h3>
+            <h2 class="caprasimo-regular h2-style" data-key="cafeName">VERO COFFEE</h2>
+          </div>
+
+          <img src="assets/icons/nature.png" alt="Nature Icon" class="about-icon" />
+
+          <div class="about-text caprasimo-regular">
+            <p data-key="aboutVero1">
+              <span>Vero Coffee</span> has been proudly serving since 2020, founded and owned by Ali.
+              The name <em>"Vero"</em> is derived from Italian, meaning <span>"true"</span> — a reflection of our
+              dedication to offering authentic, high-quality coffee experiences.
+            </p>
+            <p data-key="aboutVero2">
+              Vero Coffee began as a small shop in <span>Rahimawa, Kirkuk</span>, and thanks to the love and support
+              of our community, we’ve grown into <span>two thriving branches</span>.
+            </p>
+            <p data-key="aboutVero3">
+              Every cup we serve is crafted with care, combining rich flavors, cozy vibes, and a passion for making your
+              day better — one coffee at a time.
+            </p>
+            <p class="sub-text caprasimo-regular" data-key="aboutVero4"><em>True Coffee. True Moments.</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="service">
+      <div class="service-wrapper">
+
+        <div class="service-header menu-header caprasimo-regular">
+          <h2 class="h2-style" data-key="veroService">OUR SERVICES</h2>
+          <p class="slogan " data-key="serviceSlogan">Vero Coffee can make your moments much valuable</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="services-card caprasimo-regular">
+            <img src="assets/icons/cup-of-drink.png" alt="Coffee break icon">
+            <h3 class="h3-style" data-key="coffeeBreak">Coffee Break</h3>
+            <p class="description-p" data-key="coffeeBreakDescreption">
+              Elevate your events with our coffee break service. We take care of everything from freshly brewed coffee
+              to a full snack arrangement ensuring your guests enjoy a relaxing and flavorful break.
+            </p>
+          </div>
+
+          <div class="services-card caprasimo-regular">
+            <img src="assets/icons/musical-note.png" alt="Music note icon">
+            <h3 class="h3-style" data-key="musicEvent">Music Events</h3>
+            <p class="description-p" data-key="musicEventDescreption">
+              Whether you're vibing solo or hanging with friends, Vero Coffee brings you the rhythm of the city. Chill
+              out to laid-back beats or swing by for our acoustic evenings.
+            </p>
+          </div>
+
+          <div class="services-card caprasimo-regular">
+            <img src="assets/icons/balloons.png" alt="Birthday icon">
+            <h3 class="h3-style" data-key="birthday">Birthday</h3>
+            <p class="description-p" data-key="birthdayDescreption">
+              Celebrate your birthday at Vero Coffee with great vibes and tasty treats. We provide the cozy space you
+              bring the joy! Decorations and snack tables included.
+            </p>
+          </div>
+          <div class="services-card caprasimo-regular">
+            <img src="assets/icons/photoshoot.png" alt="Birthday icon">
+            <h3 class="h3-style" data-key="photoshoot">Phototshoot</h3>
+            <p class="description-p" data-key="photoshootDescreption">
+              Our café is more than just coffee it's a cozy, stylish space made for memories. Come in, enjoy your drink,
+              and feel free to snap your favorite moments. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="gallery" class="section gallery-section">
+      <div class="gallery-wrapper">
+
+        <div class="gallery-info flex d-column align-center justify-center">
+          <h3 class="imperial-script-regular welcome" data-key="gallery">Gallery</h3>
+          <h2 class="caprasimo-regular h2-style" data-key="veroMoment">Vero Moments</h2>
+          <p class="slogan caprasimo-regular" data-key="gallerySlogan">Explore the cozy vibes, memorable events, and
+            wonderful people that make Vero Coffee feel like home.
+          </p>
+          <button class="secondary-btn caprasimo-regular" data-key="exploreGalleryBtn" onclick="goToGallery()">Explore
+            Gallery</button>
+        </div>
+
+        <div class="gallery-image">
+          <img src="assets/images/vero_photos (12).jpg" alt="Vero Coffee Gallery Preview">
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section" id="testimonials">
+      <!-- Wave Top -->
+      <div class="wave-top">
+        <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#fafafa" fill-opacity="1"
+            d="M0,64L48,64C96,64,192,64,288,53.3C384,43,480,21,576,26.7C672,32,768,64,864,85.3C960,107,1056,117,1152,101.3C1248,85,1344,43,1392,21.3L1440,0L1440,0L0,0Z" />
+        </svg>
+      </div>
+
+      <!-- Main Content -->
+      <div class="testimonial-wrapper">
+        <h2 class="h2-style caprasimo-regular" data-key="testimonialTitle">Words From Our Community</h2>
+        <img src="assets/icons/quote.png" alt="Quote Icon" class="quote-icon" />
+
+        <div class="testimonial-carousel-container" aria-label="Testimonial carousel">
+          <div class="testimonial-carousel" id="carousel">
+            <!-- Testimonial cards populated with JS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Wave Bottom -->
+      <div class="wave-bottom">
+        <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#fafafa" fill-opacity="1"
+            d="M0,64L48,64C96,64,192,64,288,53.3C384,43,480,21,576,26.7C672,32,768,64,864,85.3C960,107,1056,117,1152,101.3C1248,85,1344,43,1392,21.3L1440,0L1440,120L0,120Z" />
+        </svg>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-grid-wrapper caprasimo-regular">
+
+        <!-- Left Header -->
+        <div class="contact-header-left">
+          <h2 class="h2-style" data-key="contactTitle">Get In Touch</h2>
+          <p class="slogan" data-key="contactSlogan">We're always happy to hear from you. Let’s connect!</p>
+
+          <div class="opening-time-wrapper">
+            <img src="assets/icons/Vector.png" alt="Brush Decoration" class="background-brush" />
+            <div class="opening-time slogan">
+              <span data-key="openDaily">Open Daily</span>
+              <br>
+              <span data-key="openTime">7:00am to 12:00pm</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info-grid">
+          <!-- Location -->
+          <div class="contact-box align-left-box">
+            <h3 class="contact-label" data-key="location">Our Locations</h3>
+            <ul>
+              <li>
+                <a class="location-a icon-hover" target="_blank" href="https://maps.app.goo.gl/h7afW4Qnp9x4MeBB6"
+                  data-default="pin.png" data-hover="pin-fill.png">
+                  <img src="assets/icons/pin.png" alt="Location Icon" class="contact-icon" />
+                  <span data-key="branche1">Rahimawa, Exwan U tern, Fakhri Pharmacist Building</span>
+                </a>
+              </li>
+              <li>
+                <a class="location-a icon-hover" target="_blank" href="https://maps.app.goo.gl/rDhswsopWWD4kP8g8"
+                  data-default="pin.png" data-hover="pin-fill.png">
+                  <img src="assets/icons/pin.png" alt="Location Icon" class="contact-icon" />
+                  <span data-key="branche2"> Shorja, Near the Faculty of Medicine</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Phone -->
+          <div class="contact-box align-left-box">
+            <h3 class="contact-label" data-key="callUs">Call Us</h3>
+            <ul>
+              <li class="icon-hover" data-default="phone.png" data-hover="phone-fill.png"><img
+                  src="assets/icons/phone.png" alt="Phone Icon" class="contact-icon" />
+                <span class="force-ltr " data-key="phoneNum">+964 770 123 4567</span>
+              </li>
+              <li class="icon-hover" id="whatsapp" data-default="whatsapp.png" data-hover="whatsapp-fill.png"
+                onclick="goToWhatsApp()"> <img src="assets/icons/whatsapp.png" alt="WhatsApp Icon"
+                  class="contact-icon" />
+                <span class="force-ltr" data-key="whatsApp">
+                  &lrm;+964 750 987 6543&lrm;
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Follow Us -->
+          <div class="contact-box">
+            <h3 class="contact-label" data-key="folloeUs">Follow Us</h3>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/vero_coffee" data-default="instagram.png"
+                data-hover="instagram-fill.png" target="_blank">
+                <img src="assets/icons/instagram.png" alt="Instagram Icon">
+              </a>
+              <a href="https://www.facebook.com/share/17Lnfj2rWM" data-default="facebook.png"
+                data-hover="facebook-fill.png" target="_blank">
+                <img src="assets/icons/facebook.png" alt="Facebook Icon">
+              </a>
+              <a href="https://snapchat.com/t/KlfgmVgj" data-default="snapchat.png" data-hover="snapchat-fill.png"
+                target="_blank">
+                <img src="assets/icons/snapchat.png" alt="Snapchat Icon">
+              </a>
+            </div>
+          </div>
+
+          <!-- Delivery Platforms -->
+          <div class="contact-box">
+            <h3 class="contact-label" data-key="findUs">Find Us On</h3>
+            <div class="delivery-icons">
+              <a href="" target="_blank"><img src="assets/icons/lezzoo.PNG" alt="Lezzoo Delivery Logo"></a>
+              <a href="" target="_blank"><img src="assets/icons/tiptop.PNG" alt="TipTop Delivery Logo"></a>
+              <a href="https://link.totersapp.com/YjJk88fHTrATRE5u6" target="_blank"><img src="assets/icons/toters.PNG" alt="Toters Delivery Logo"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+  <!-- Footer -->
+
+  <footer>
+    <span class="footer-line"></span>
+
+    <div class="footer-wrapper flex align-center justify-between wrap">
+
+      <!-- Cafe Name -->
+      <div class="cafe-div"><span data-key="vero" class="imperial-script-regular">Vero</span> <span
+          data-key="coffee">Coffee</span></div>
+
+      <!-- Cafe Info -->
+      <div class="cafe-info">
+        <a href="https://maps.app.goo.gl/h7afW4Qnp9x4MeBB6" data-key="branche1" target="_blank">Rahimawa, Kirkuk,
+          Iraq</a>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="social-icons flex">
+        <a href="https://www.instagram.com/vero_coffee" aria-label="Instagram" target="_blank">
+          <img src="assets/icons/instagram.png" alt="Instagram Icon">
+        </a>
+        <a href="https://www.facebook.com/share/17Lnfj2rWM" aria-label="Facebook" target="_blank">
+          <img src="assets/icons/facebook.png" alt="Facebook Icon">
+        </a>
+        <a href="https://snapchat.com/t/KlfgmVgj" aria-label="Snapchat" target="_blank">
+          <img src="assets/icons/snapchat.png" alt="Snapchat Icon">
+        </a>
+      </div>
+    </div>
+
+    <!-- Developer Credit -->
+    <p id="developer">
+      <a href="https://www.linkedin.com/in/helin-youns" target="_blank" rel="noopener">Developed by: Helin Younis</a>
+    </p>
+  </footer>
+
+  <script src="assets/js/home.js"></script>
+  <script src="assets/js/lang.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html><!DOCTYPE html>
+<html lang="en" dir="ltr" class="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="icon" type="image/png" href="assets/icons/vero-coffee-logo.png">
+  <title>Vero Coffee</title>
+
+</head>
+
+<body class="flex d-column">
+  <!-- Header -->
+  <header>
+    <div class="navbar-wrapper" id="navbar-wrapper">
+      <nav class="navbar flex align-center justify-space-between" id="navbar">
+
         <div class="logo caprasimo-regular flex justify-center align-center">
           <img src="assets/icons/vero-coffee-logo.png" alt="Vero Coffe Logo"> <span class="logo-script-vero"
             data-key="vero">Vero&nbsp;</span> <span class="logo-coffee" data-key="coffee">Coffee</span>
