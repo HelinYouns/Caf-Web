@@ -433,20 +433,20 @@ window.galleryData = [
     title: "ڕۆژێک لە ڤیرۆ",
     description: "کەشێکی ئارام",
     images: [
-      "assets/images/vero_photos (12).jpg",
-      "assets/images/vero_photos (6).jpg",
-      "assets/images/vero_photos (7).jpg",
-      "assets/images/vero_photos (9).jpg",
+      "../assets/images/vero_photos (12).jpg",
+      "../assets/images/vero_photos (6).jpg",
+      "../assets/images/vero_photos (7).jpg",
+      "../assets/images/vero_photos (9).jpg",
     ],
   },
   {
     title: "ڕۆژێک لە ڤیرۆ",
     description: "کەشێکی ئارام",
     images: [
-      "assets/images/vero_photos (15).jpg",
-      "assets/images/vero_photos (11).jpg",
-      "assets/images/vero_photos (13).jpg",
-      "assets/images/vero_photos (14).jpg",
+      "../assets/images/vero_photos (15).jpg",
+      "../assets/images/vero_photos (11).jpg",
+      "../assets/images/vero_photos (13).jpg",
+      "../assets/images/vero_photos (14).jpg",
     ],
   },
 ];
