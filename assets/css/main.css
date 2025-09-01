@@ -164,7 +164,9 @@ main {
   height: 80px;
   transition: 0.2s ease-in-out;
 }
-
+.navbar a{
+  text-decoration: none;
+}
 .navbar-wrapper.scrolled .navbar {
   background-color: var(--headerBlure);
   backdrop-filter: blur(10px);
