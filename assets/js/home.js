@@ -19,25 +19,21 @@ document
 
 const testimonials = [
   {
-    text: "I like Your Cafe. Best coffee in town! Cozy place and great vibes.",
-    author: "Helin",
+    text: "أحب مقهاكم. أفضل قهوة في المدينة! مكان مريح وأجواء رائعة",
+    author: "هێلین",
   },
   {
-    text: "Amazing ambiance, the coffee and cake were perfect!",
-    author: "Sara",
+    text: "جو رائع، القهوة والكعكة كانتا مثاليتين",
+    author: "سارا",
   },
   {
-    text: "Super friendly staff and relaxing atmosphere.",
-    author: "Ali",
+    text: "الموظفين ودودون للغاية والجو مريح",
+    author: "یاد",
   },
   {
     text: "The cakes are amazing!",
-    author: "Lara",
-  },
-  {
-    text: "Perfect place for studying and catching up with friends.",
-    author: "Omar",
-  },
+    author: "محمد",
+  }
 ];
 
 const carousel = document.getElementById("carousel");
