@@ -20,7 +20,7 @@ document
 const testimonials = [
   {
     text: "أحب مقهاكم. أفضل قهوة في المدينة! مكان مريح وأجواء رائعة",
-    author: "هێلین",
+    author: "محمد",
   },
   {
     text: "جو رائع، القهوة والكعكة كانتا مثاليتين",
@@ -30,10 +30,7 @@ const testimonials = [
     text: "الموظفين ودودون للغاية والجو مريح",
     author: "یاد",
   },
-  {
-    text: "The cakes are amazing!",
-    author: "محمد",
-  }
+
 ];
 
 const carousel = document.getElementById("carousel");
