@@ -76,7 +76,7 @@ window.translations = {
   contactTitle: "تواصل معنا",
   contactSlogan: "يسعدنا دائمًا التواصل معك.",
   openDaily: "مفتوح يوميا",
-  openTime: "من الساعة 7:00 صباحًا إلى الساعة 12:00 ظهرًا",
+  openTime: "من ٧صباحا الى ١٢مساء",
   // Location
   location: "مواقعنا",
   branche1: "رحيماوا فلكة اخوان-عمارة صيدلي فخري، كركوك",
