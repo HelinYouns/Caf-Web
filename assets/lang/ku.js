@@ -75,7 +75,7 @@ window.translations = {
   // Contact Section
   contactTitle: "پەیوەندیمان لەگەڵ ببەستە",
   contactSlogan:
-    "هەمیشە دڵخۆشین بە بیستنی زانیارییەکانتان. با لە پەیوەندییا بین!",
+    "هەمیشە دڵخۆشین بە بیستنی زانیارییەکانتان",
   openDaily: "ڕۆژانە کراوەیە",
   openTime: "٧ی بەیانی بۆ ١٢ی شەو",
   // Location
