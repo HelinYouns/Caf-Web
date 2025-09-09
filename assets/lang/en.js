@@ -73,7 +73,7 @@ window.translations = {
   testimonialTitle: "Words From Our Community",
   // Contact Section
   contactTitle: "Get In Touch",
-  contactSlogan: "We're always happy to hear from you. Let’s connect!",
+  contactSlogan: "We're always happy to hear from you.",
   openDaily: "Open Daily",
   openTime: "7:00am to 12:00pm",
   // Location
