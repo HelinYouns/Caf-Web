@@ -92,7 +92,7 @@ window.translations = {
   findUs: "داواکاری بکە لەڕیی",
   // ***************Menu Page**************
   theMenu: "مينو",
-  thecoffee: "قاوە",
+  theCoffee: "قاوە",
   latte: "لاتێ",
   frappe: "فراپێ",
   milkshake: "میلک شەیک",
