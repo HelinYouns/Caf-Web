@@ -92,7 +92,7 @@ window.translations = {
 
   // ***************Menu Page**************
   theMenu: "مینو",
-  coffe: "كوفي",
+  thecoffee: "كوفي",
   latte: "لاتیە",
   frappe: "فرابيه",
   milkshake: "ميلك شيك",
@@ -109,7 +109,7 @@ window.translations = {
 };
 
 window.menuData = {
-  coffe: [
+  thecoffee: [
     {
       name: "إسبريسو",
       price: "٢٠٠٠",
@@ -415,7 +415,7 @@ window.menuData = {
 };
 
 window.menuTitles = {
-  coffe: "کوفی",
+  thecoffee: "کوفی",
   latte: "لاتیە",
   frappe: "فرابیە",
   milkshake: "ميلك شيك",
