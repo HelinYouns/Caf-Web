@@ -6,7 +6,7 @@ const imageElement = document.getElementById("menu-category-image");
 
 // Category to Image Mapping
 const imageMap = {
-  thecoffee: "../assets/images/espresso.jpg",
+  coffee: "../assets/images/espresso.jpg",
   latte: "../assets/images/latte.jpg",
   frappe: "../assets/images/frappe.jpg",
   milkshake: "../assets/images/milkshake.jpg",
