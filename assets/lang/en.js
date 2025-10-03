@@ -1,7 +1,7 @@
 window.translations = {
   // Cafe Logo
   vero: "Vero",
-  coffee: "Coffee",
+  coffe: "Coffee",
   // Navigation Bar
   home: "Home",
   about: "About",
@@ -91,7 +91,7 @@ window.translations = {
 
   // ***************Menu Page**************
   theMenu: "THE MENU",
-  thecoffee: "COFFEE",
+  coffee: "COFFEE",
   latte: "LATTE",
   frappe: "FRAPPE",
   milkshake: "MILKSHAKE",
@@ -107,7 +107,7 @@ window.translations = {
 };
 
 window.menuData = {
-  thecoffee: [
+  coffee: [
     {
       name: "Espresso",
       price: "2000",
