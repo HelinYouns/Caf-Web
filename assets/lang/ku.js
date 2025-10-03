@@ -108,7 +108,7 @@ window.translations = {
 };
 
 window.menuData = {
-  thecoffee: [
+  coffee: [
     {
       name: "ئێسپرێسۆ",
       price: "٢٠٠٠",
