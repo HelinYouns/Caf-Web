@@ -91,7 +91,7 @@ window.translations = {
 
   // ***************Menu Page**************
   theMenu: "THE MENU",
-  coffe: "COFFEE",
+  thecoffe: "COFFEE",
   latte: "LATTE",
   frappe: "FRAPPE",
   milkshake: "MILKSHAKE",
@@ -107,7 +107,7 @@ window.translations = {
 };
 
 window.menuData = {
-  "coffe": [
+  "coffee": [
     {
       name: "Espresso",
       price: "2000",
