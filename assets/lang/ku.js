@@ -417,7 +417,7 @@ window.menuData = {
 };
 
 window.menuTitles = {
-  thecoffee: "قاوە",
+  coffee: "قاوە",
   latte: "لاتێ",
   frappe: "فراپێ",
   milkshake: "میڵک شەیک",
