@@ -109,7 +109,7 @@ window.translations = {
 };
 
 window.menuData = {
-  thecoffee: [
+  coffee: [
     {
       name: "إسبريسو",
       price: "٢٠٠٠",
@@ -415,7 +415,7 @@ window.menuData = {
 };
 
 window.menuTitles = {
-  thecoffee: "کوفی",
+  coffee: "کوفی",
   latte: "لاتیە",
   frappe: "فرابیە",
   milkshake: "ميلك شيك",
