@@ -1,7 +1,7 @@
 window.translations = {
   // Cafe Logo
   vero: "ڤیرۆ",
-  coffee: "کۆفی",
+  coffe: "کۆفی",
   // Navigation Bar
   home: "سەرەکی",
   about: "دەربارەی ئێمە",
@@ -92,7 +92,7 @@ window.translations = {
   findUs: "داواکاری بکە لەڕیی",
   // ***************Menu Page**************
   theMenu: "مينو",
-  thecoffee: "قاوە",
+  coffee: "قاوە",
   latte: "لاتێ",
   frappe: "فراپێ",
   milkshake: "میلک شەیک",
@@ -108,7 +108,7 @@ window.translations = {
 };
 
 window.menuData = {
-  thecoffee: [
+  coffee: [
     {
       name: "ئێسپرێسۆ",
       price: "٢٠٠٠",
@@ -417,7 +417,7 @@ window.menuData = {
 };
 
 window.menuTitles = {
-  thecoffee: "قاوە",
+  coffee: "قاوە",
   latte: "لاتێ",
   frappe: "فراپێ",
   milkshake: "میڵک شەیک",
