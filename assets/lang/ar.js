@@ -92,7 +92,7 @@ window.translations = {
 
   // ***************Menu Page**************
   theMenu: "مینو",
-  thecoffee: "كوفي",
+  theCoffee: "كوفي",
   latte: "لاتیە",
   frappe: "فرابيه",
   milkshake: "ميلك شيك",
