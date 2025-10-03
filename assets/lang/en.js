@@ -91,7 +91,7 @@ window.translations = {
 
   // ***************Menu Page**************
   theMenu: "THE MENU",
-  theCoffee: "COFFEE",
+  thecoffee: "COFFEE",
   latte: "LATTE",
   frappe: "FRAPPE",
   milkshake: "MILKSHAKE",
