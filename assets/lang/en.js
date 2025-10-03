@@ -415,17 +415,7 @@ window.menuData = {
     }
   ],
 };
-window.menuTitles = {
-  thecoffee: "Coffee",
-  latte: "Latte",
-  frappe: "فراپێ",
-  milkshake: "میڵک شەیک",
-  "fresh-drinks": "خواردنەوەی فرێش",
-  "vero-special": "تایبەتەکانی ڤیرۆ",
-  "vero-creation": "دروستکراوەکانی ڤیرۆ",
-  toast: "تۆست",
-  sweets: "شیرینییەکان",
-};
+
 window.galleryData = [
   {
     title: "Step Into Our Café World",
