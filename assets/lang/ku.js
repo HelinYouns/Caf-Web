@@ -92,7 +92,7 @@ window.translations = {
   findUs: "داواکاری بکە لەڕیی",
   // ***************Menu Page**************
   theMenu: "مينو",
-  coffe: "قاوە",
+  thecoffee: "قاوە",
   latte: "لاتێ",
   frappe: "فراپێ",
   milkshake: "میلک شەیک",
@@ -108,7 +108,7 @@ window.translations = {
 };
 
 window.menuData = {
-  coffe: [
+  thecoffee: [
     {
       name: "ئێسپرێسۆ",
       price: "٢٠٠٠",
@@ -417,7 +417,7 @@ window.menuData = {
 };
 
 window.menuTitles = {
-  coffe: "قاوە",
+  thecoffee: "قاوە",
   latte: "لاتێ",
   frappe: "فراپێ",
   milkshake: "میڵک شەیک",
