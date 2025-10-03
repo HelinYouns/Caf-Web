@@ -1,7 +1,7 @@
 window.translations = {
   // Cafe Logo
   vero: "فيرو",
-  coffee: "کوفي",
+  coffe: "کوفي",
   // Navigation Bar
   home: "الرئيسية",
   about: "من نحن",
@@ -92,7 +92,7 @@ window.translations = {
 
   // ***************Menu Page**************
   theMenu: "مینو",
-  thecoffee: "كوفي",
+  coffee: "كوفي",
   latte: "لاتیە",
   frappe: "فرابيه",
   milkshake: "ميلك شيك",
@@ -109,7 +109,7 @@ window.translations = {
 };
 
 window.menuData = {
-  thecoffee: [
+  coffee: [
     {
       name: "إسبريسو",
       price: "٢٠٠٠",
@@ -415,7 +415,7 @@ window.menuData = {
 };
 
 window.menuTitles = {
-  thecoffee: "کوفی",
+  coffee: "کوفی",
   latte: "لاتیە",
   frappe: "فرابیە",
   milkshake: "ميلك شيك",
